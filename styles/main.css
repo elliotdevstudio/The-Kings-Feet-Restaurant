@@ -1,0 +1,366 @@
+/* IMPORT FILES AND FONTS HERE */
+
+  
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+}
+.site-wrapper {
+    font-size: calc((1 - 1) * 1.2vh + 1rem);
+} 
+
+h1 {
+    font-size: calc((4 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+    font-family: Blackriver-bold;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 2rem;
+    
+}
+h2 {
+    font-family: Abel, monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: calc((2.2 - 1) * 1.2vw + 1rem);
+}
+h3 {
+    margin-top: 0px;
+    font-family: Abel, monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: calc((2.2 - 1) * 1.2vw + 1rem);
+
+}
+
+p {
+    font-family: source-code-pro, monospace;
+    font-weight: 400;
+    font-style: normal;
+
+}
+a {
+    font-family: source-code-pro, monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+
+
+}
+
+footer {
+    min-height: 33vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-wrapper {
+    margin: 0 auto;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    position: relative;
+    width: 75%;
+    max-width: 1200px;
+    display: flex;
+    
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 16.5vh;
+    background-color: white;
+}
+.navbar_wrapper {
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-self: center;
+}
+.nav-items-wrapper{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: rgb(42, 40, 41);
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    pointer-events: auto;
+}
+.header-nav-item {
+    margin-left: 1.3vw;
+    text-align: right;
+}
+.homepage-menu {
+    display: flex;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+.homepage-link {
+    box-sizing: content-box;
+    color: white;
+    text-underline-offset: 0.2em;
+    font-size: calc((4 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+    font-family: Blackriver-bold;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px; 
+    margin-top: 0px;
+    margin-bottom: 2rem;
+}
+.section-one {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url('../assets/images/PestoChicken.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 16.5vh);
+    background-position: center center;
+    background-attachment: scroll;
+    object-position: 50% 50%;
+    z-index: 5;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+.section-one:before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(42, 40, 41);
+    opacity: 0.25;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+.section-two {
+    margin-top: 0xp;
+    margin-bottom: 0px;
+}
+.section-three {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.block-content {
+    display: flex;
+    flex-direction: column;
+}
+.section-content {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10vmax;
+    padding-bottom: 10vmax;
+    max-width: 1200px;
+    text-size-adjust: 100%;
+    overflow-wrap:  break-word;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.red-section {
+    background-color: rgb(182, 32, 37);
+    color: white;
+    min-height: 50vh;
+    
+}
+.red-section-button {
+    padding: 1.2em 2.004em;
+    font-family: Source Code Pro;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: .02em;
+    font-size: 1rem;
+    border: solid white 2px;
+}
+.product-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    padding-top: 6vmax;
+    padding-bottom: 6vmax;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+.product-image-container {
+    content: "";
+    display: block;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    overflow: none;
+}
+.product-image {
+   width: 42.5%;
+}
+.product-card-description {
+    display:flex;
+    flex-direction: column;
+}
+.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.address-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.open-hours-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 75%;
+    max-width: 1200px;
+}
+.footer-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4vw;
+    margin-right: 4vw;
+
+
+}
+
+
+
+
+/* */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) { 
+    .homepage-menu {
+        padding: 17px;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        display: flex;
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+    }
+    .navbar-burger {
+      display: flex;
+      flex-direction: row;
+    }
+    .header-content-div {
+    padding-top: 6vw;
+    padding-right: 6vw;
+    padding-bottom: 6vw;
+    padding-left: 6vw;
+    }
+    .footer-content-wrapper {
+        flex-direction: column;
+    }
+ }
+
+
+/* Medium devices */
+@media (min-width: 768px) { 
+    .header-content-div { 
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 2.5vw;
+        padding-bottom: 2.5vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+   }
+   .homepage-menu {
+    padding: 17px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+   h3 {
+    font-size: calc((2.2 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+    }
+    .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+    }
+    .footer-content-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+   
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    
+}
+
+
+
+/* Extra large devices (desktops, 992px and up)*/
+@media (min-width: 1200px) { 
+    /* display the full navbar and set the max width for this vw 
+        also look into image quality and display 
+    */
+    .header {
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        line-height: 1;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+   
+   
+}
+   
+
+
+
+
+/*
+
+
+** 702 pixels tall for background image
+
+** this is for a site wrapper class for all body text.. apparently
+font-size: calc((1 - 1) * 1.2vw + 1rem);
+**/
+
+
