@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/scroll-animations.css">
   <link rel="stylesheet" href="https://use.typekit.net/grx8rwo.css">
+  <script type="text/javascript" src="/scripts/app.js" defer></script>
 
 
  <!-- <script src="scripts/homepage.js" defer></script>-->
@@ -15,29 +17,32 @@
     <div class="site-wrapper">
         <navbar class="navbar">
             <div class="navbar-wrapper">
-                <!-- BOTH MOBILE AND DESKTOP NAV ELEMENTS ABOVE BACKGROUND IMAGE -->
-
-                <!-- css: navbar is 136.49px height -->
-                <div> <!-- Logo (card/sinage) --> </div>
-           
-           
-                <div class="nav-items-wrapper">
-                    <div class="header-nav-item"><a href="#">Home</a></div>
-                    <div class="header-nav-item"><a href="menu.html">Menu</a></div>
-                    <div class="header-nav-item"><a href="press.html">Press</a></div>
-                    <div class="header-nav-item"><a href="gallery.html">Gallery</a></div> 
-                    <div class="header-nav-item"><a href="reservation.html">Reservation</a></div> 
-                    <div class="header-nav-item"><a href="order_online.html">Order Online</a></div>
-                    <div> <!--  <a> and <svg> (insta) (yelp)--></div>
+                <div class="header-logo-container">
+                    <img class="header-title-logo" src="/assets/images/logo.png">     <!-- Logo (card/sinage) --> 
                 </div>
-                <div class="navbar-icons-wrapper">
-                    <i><!-- insta icon--></i>
-                    <i><!-- yelp icon--></i>
-                    <i class="navbar-burger"><!-- icon for burger --></i>
-                    <i class="navbar-cross"><!-- icon for exit cross --></i>
+                <div class="nav-items-wrapper">
+                    <div class="header-nav-item"><a class="navlink" href="#">Home</a></div>
+                    <div class="header-nav-item"><a class="navlink" href="menu.html">Menu</a></div>
+                    <div class="header-nav-item"><a class="navlink" href="press.html">Press</a></div>
+                    <div class="header-nav-item"><a class="navlink" href="gallery.html">Gallery</a></div> 
+                    <div class="header-nav-item"><a class="navlink" href="reservation.html">Reservation</a></div> 
+                    <div class="navbar-icons-wrapper">
+                        <i><!-- insta icon--></i>
+                        <i><!-- yelp icon--></i>
+                    </div>
+                </div>
+                <div id="navbar-burger" class="navbar-burger" role=" button">
+                   
+                    <div id="top-bun" class="top-bun"></div>
+                    <div id="patty" class="patty"></div>
+                    <div id="bottom-bun" class="bottom-bun"></div>
+                    
                 </div>
             </div>
         </navbar>
+        <section id="navModal">
+
+        </section>
         <section class="section-one">
             
             <div class="homepage-menu">
@@ -67,7 +72,7 @@
                     </h3>
                     <h3>We also serve beer, wine, and low A.B.V cocktails.
                     </h3>
-                    <div role="button" data-alignment="center">
+                    <div  class="button-container" role="button" data-alignment="center">
                         <a class="red-section-button">View Menu</a>
                     </div>
                 </div>
@@ -79,26 +84,26 @@
 
         <!-- for card vh, check sizing to fit to content responsively-->
         <section class="section-three">
-            <div class="product-card-wrapper">
-                <div class="product-card-description">
+            <div class="product-card-wrapper odd">
+                <div class="product-card-description start-position-left show-on-scroll left">
                 <h3 class="product-card-heading">Recipes developed overtime from our home kitchen…</h3>
                 <p>We challenge ourselves to bring you the familiar flavor and comfort of classic Italian fare using high quality, all plant-based ingredients.</p>
                 </div>
-                <div class="product-image-container">
+                <div class="product-image-container start-position-right show-on-scroll right">
                     <img class="product-image" src="/assets/images/ChickenAlfredo.jpg">
                     <!-- css: Alfredo Image-- Intrinsic size:	1023 × 1198 px
                     also the aspect ratio is the same 1023:1198 -->
                 </div>
             </div>
-            <div class="product-card-wrapper">
-                <div class="product-image-container">
+            <div class="product-card-wrapper even">
+                <div class="product-image-container start-position-left show-on-scroll left">
                      <img class="product-image" src="/assets/images/Italian Soda_Strawberry.jpg">
                 <!-- css: strawberry drink; Intrinsic size:	945 × 1173 px
                     Intrinsic aspect ratio:	315∶391-->
                 </div>
-                <div class="product-card-description">
-                <h3 class="product-card-heading">Pairings aplenty</h3>
-                <p>We offer craft beer, low alcohol cocktails, and sustainably produced wines from near and afar.</p>
+                <div class="product-card-description start-position-right show-on-scroll right">
+                    <h3 class="product-card-heading">Pairings aplenty</h3>
+                    <p>We offer craft beer, low alcohol cocktails, and sustainably produced wines from near and afar.</p>
                 </div>
             </div>
         </section>
@@ -111,7 +116,7 @@
                         Berkeley, CA 12345
                     </h2>
                     </br>
-                    <div class="content-wrapper">
+                    <div class="button-container">
                         <a class="red-section-button">Get Directions</a>
                     </div>
                 </div>
