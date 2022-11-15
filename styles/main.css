@@ -281,6 +281,18 @@ a.red-section-button {
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 471px) {
+    .section-content {
+        text-align: left;
+    }
+    .address-wrapper {
+        align-content: center;
+        text-align: center;
+    }
+    .open-hours-info-wrapper {
+        flex-direction: column;
+        text-align: center;
+
+    }
    
 }
 
@@ -379,7 +391,7 @@ a.red-section-button {
         
        
     }
-
+    
 
     .header-content-div {
         padding-top: 6vw;
