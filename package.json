@@ -10,9 +10,6 @@
   },
   "author": "Elliot Harrison / designed by Nicole Wang Studio",
   "license": "ISC",
-  "devDependencies": {
-    "lite-server": "^2.6.1"
-  },
   "dependencies": {
     "jquery": "^3.6.1"
   }
