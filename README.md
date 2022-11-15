@@ -1,0 +1,1 @@
+This page is the website for a restaurant called 'The King's Feet', formerly located in Berkeley, CA. The preservation of this page is intended to serve as a front-end example of my work, done manually with CSS and javascript (without use of any CSS frameworks).
