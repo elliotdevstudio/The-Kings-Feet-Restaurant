@@ -1,6 +1,9 @@
 /* IMPORT FILES AND FONTS HERE */  
 @import url('https://use.typekit.net/grx8rwo.css'); 
-
+@font-face {
+    font-family: Blackriver;
+    src: url('.assets/Exported Fonts/Blackriver-Bold.otf');
+}
 body {
     padding: 0px;
     margin: 0px;
@@ -28,11 +31,13 @@ h2 {
 }
 
 h3 {
-    margin-top: 0px;
+   
     font-family: Abel, monospace;
     font-weight: 300;
     font-style: normal;
     font-size: calc((2.2 - 1) * 1.2vw + 1rem);
+    margin: 0;
+    padding-bottom: 17px;
 }
 
 p {
@@ -54,18 +59,18 @@ a {
 
 footer {
     min-height: 33vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+   
 }
+
 .content-wrapper {
-    margin: 0 auto;
+    margin-left: 6vw;
+    margin-right: 6vw;
     padding-left: 4vw;
     padding-right: 4vw;
     position: relative;
-    width: 75%;
     max-width: 1200px;
     display: flex;
+    justify-content: center;
 }
 
 .navbar {
@@ -192,7 +197,8 @@ a.navlink {
 .red-section {
     background-color: rgb(182, 32, 37);
     color: white;
-    height: 570px;
+    padding-top: 6.6vmax;
+    padding-bottom: 6.6vmax;
 }
 .button-container {
     margin-top: 17px;
@@ -201,6 +207,7 @@ a.navlink {
 
 a.red-section-button {
     padding: 1.2em 2.004em;
+    align-self: center;
     font-family: source-code-pro, monospace;
     color: white;
     font-style: normal;
@@ -226,8 +233,6 @@ a.red-section-button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 5vmax;
-    padding-bottom: 5vmax;
     max-width: 1200px;
     text-size-adjust: 100%;
     overflow-wrap:  break-word;
@@ -249,11 +254,10 @@ a.red-section-button {
 .open-hours-info-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 36px;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
     max-width: 1200px
 }
 .open-hours {
@@ -263,11 +267,29 @@ a.red-section-button {
 .footer-content-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: 4vw;
-    margin-right: 4vw;
+    align-self: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    max-width: 1200px;
+   
+}
 
-
+h3.footer-block {
+    margin: 0px;
+}
+.block {
+    padding-left: 17px;
+    padding-right: 17px;
+    text-align: left;
+    align-items: flex-start;
+}
+.icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 50px;
+    gap: 15px;
 }
 #navModal {
     display: none;
@@ -288,15 +310,12 @@ a.red-section-button {
         align-content: center;
         text-align: center;
     }
-    .open-hours-info-wrapper {
-        flex-direction: column;
-        text-align: center;
-
-    }
+   
    
 }
 
 @media (max-width: 767px) { 
+
     .homepage-menu {
         padding: 17px;
         margin-left: 4vw;
@@ -318,6 +337,12 @@ a.red-section-button {
         max-height: 54px;
         width: auto;
         object-fit: contain;
+    }
+    .header-content-div {
+        padding-top: 6vw;
+        padding-right: 6vw;
+        padding-bottom: 6vw;
+        padding-left: 6vw;
     }
     .header-title-logo {
         width: auto;
@@ -393,15 +418,18 @@ a.red-section-button {
     }
     
 
-    .header-content-div {
-        padding-top: 6vw;
-        padding-right: 6vw;
-        padding-bottom: 6vw;
-        padding-left: 6vw;
+    .open-hours-info-wrapper {
+        flex-direction: column;
+        text-align: center;
+
     }
     
     .footer-content-wrapper {
         flex-direction: column;
+       
+        padding: 6vw;
+       
+        
     }
     
  }
@@ -431,6 +459,7 @@ a.red-section-button {
 }
    h3 {
         font-size: calc((2.2 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+        margin-bottom: 2rem;
     }
     .content-wrapper {
         display: flex;

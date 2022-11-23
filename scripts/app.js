@@ -29,6 +29,11 @@ function navMenuModal (e) {
 
 navMenuModal.onclick = navMenuModal;
 */
+let str1 = car;
+
+const function sepString(str1){
+    str1.
+}
 
 const navbarBurger = document.getElementById('navbar-burger');
 const topBun = document.getElementById('top-bun');
