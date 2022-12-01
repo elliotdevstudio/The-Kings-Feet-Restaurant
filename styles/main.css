@@ -8,14 +8,14 @@ body {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-.site-wrapper {
-    font-size: calc((1 - 1) * 1.2vh + 1rem);
-} 
+/*.site-wrapper {
+    font-size: calc((1 - 1) * 1.2vh + 1.125rem);
+} */
+
 h1 {
-    font-size: calc((4 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
     font-family: Blackriver-bold;
     font-weight: 400;
     font-style: normal;
@@ -27,7 +27,7 @@ h2 {
     font-family: Abel, monospace;
     font-weight: 300;
     font-style: normal;
-    font-size: calc((2.2 - 1) * 1.2vw + 1rem);
+    font-size: calc((2.2 - 1) * 1.2vw + 1.125rem);
 }
 
 h3 {
@@ -35,7 +35,7 @@ h3 {
     font-family: Abel, monospace;
     font-weight: 300;
     font-style: normal;
-    font-size: calc((2.2 - 1) * 1.2vw + 1rem);
+    font-size: calc((2.2 - 1) * 1.2vw + 1.125rem);
     margin: 0;
     padding-bottom: 17px;
 }
@@ -145,13 +145,11 @@ a.navlink {
 .homepage-link {
     box-sizing: content-box;
     color: white;
-    text-underline-offset: 0.2em;
-    font-size: calc((4 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+    font-size: calc((4 - 1) * calc(.012 * min(100vh, 900px)) + 2.5rem);
     font-family: Blackriver-bold;
     font-weight: 400;
     font-style: normal;
-    text-decoration-line: underline;
-    text-decoration-thickness: 1px; 
+    text-decoration-line: none;
     margin-top: 0px;
     margin-bottom: 2rem;
 }
@@ -427,8 +425,7 @@ h3.footer-block {
     .footer-content-wrapper {
         flex-direction: column;
        
-        padding: 6vw;
-       
+        padding: 6vw;    
         
     }
     
@@ -458,7 +455,7 @@ h3.footer-block {
         z-index: 10;
 }
    h3 {
-        font-size: calc((2.2 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+        
         margin-bottom: 2rem;
     }
     .content-wrapper {
