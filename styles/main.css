@@ -141,6 +141,7 @@ a.navlink {
     display: flex;
     flex-direction: column;
     z-index: 10;
+    margin-top: 2rem;
 }
 .homepage-link {
     box-sizing: content-box;
@@ -442,10 +443,18 @@ h3.footer-block {
         padding-left: 4vw;
         padding-right: 4vw;
    }
+   .icons-wrapper {
+    margin-left: 8px;
+   }
+   .navbar-burger {
+    display: none;
+   }
    
    .homepage-menu {
         padding: 17px;
-        margin: auto;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         position: relative;
         height: 100%;
@@ -492,12 +501,7 @@ h3.footer-block {
     opacity: 1;
 }
    /*
-
-
 ** 702 pixels tall for background image
-
 ** this is for a site wrapper class for all body text.. apparently
 font-size: calc((1 - 1) * 1.2vw + 1rem);
 **/
-
-
