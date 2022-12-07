@@ -1,19 +1,17 @@
 /* IMPORT FILES AND FONTS HERE */  
+
 @import url('https://use.typekit.net/grx8rwo.css'); 
 @font-face {
     font-family: Blackriver;
     src: url('.assets/Exported Fonts/Blackriver-Bold.otf');
 }
+
 body {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-size: 20px;
 }
-
-/*.site-wrapper {
-    font-size: calc((1 - 1) * 1.2vh + 1.125rem);
-} */
 
 h1 {
     font-family: Blackriver-bold;
@@ -23,6 +21,7 @@ h1 {
     margin-top: 0px;
     margin-bottom: 2rem;  
 }
+
 h2 {
     font-family: Abel, monospace;
     font-weight: 300;
@@ -37,14 +36,12 @@ h3 {
     font-style: normal;
     font-size: calc((2.2 - 1) * 1.2vw + 1.125rem);
     margin: 0;
-    padding-bottom: 17px;
 }
 
 p {
     font-family: source-code-pro, monospace;
     font-weight: 200;
     font-style: normal;
-
 }
 
 a {
@@ -53,13 +50,10 @@ a {
     font-style: normal;
     color: hsl(329.9999999999999, 2.4390243902439024%, 16.07843137254902%);
     text-decoration: none;
-
-
 }
 
 footer {
-    min-height: 33vh;
-   
+    min-height: 33vh; 
 }
 
 .content-wrapper {
@@ -88,6 +82,7 @@ footer {
     background-color: white;
     overflow: none;
 }
+
 .navbar-wrapper {
     position: relative;
     width: 92vw;
@@ -103,6 +98,21 @@ footer {
     margin-right: 4vw;
     overflow: none;
 }
+
+.nav-items-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    justify-self: flex-end;
+    
+}
+
+.icons-wrapper {
+    padding:10px;
+}
+
+
 .header-logo-container {
     box-sizing: content-box;
     max-height: 86px;
@@ -111,29 +121,24 @@ footer {
     margin: 0px;   
     justify-self: flex-start;
 }
+
 .header-title-logo {
     width: auto;
     max-height: 86px;
     align-self: center;
     overflow: none;
 }
-.nav-items-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: right;
-    justify-self: flex-end;
-    
-}
+
+
 .header-nav-item {
-    margin-left: 1.3vw;
-    text-align: right;
-    
-    
+    padding: 10px;
+    text-align: left;
 }
+
 a.navlink {
     text-decoration-color: hsl(329.9999999999999, 2.4390243902439024%, 16.07843137254902%);
 }
+
 .homepage-menu {
     display: flex;
     position: relative;
@@ -143,6 +148,7 @@ a.navlink {
     z-index: 10;
     margin-top: 2rem;
 }
+
 .homepage-link {
     box-sizing: content-box;
     color: white;
@@ -154,6 +160,7 @@ a.navlink {
     margin-top: 0px;
     margin-bottom: 2rem;
 }
+
 .section-one {
     position: relative;
     display: flex;
@@ -173,6 +180,7 @@ a.navlink {
     padding-top: auto;
     padding-bottom: auto;
 }
+
 .section-one:before {
     display: block;
     width: 100%;
@@ -185,6 +193,7 @@ a.navlink {
     left: 0;
     top: 0;
 }
+
 .section-two {
     margin-top: 0xp;
     margin-bottom: 0px;
@@ -193,15 +202,21 @@ a.navlink {
     align-items: center;
     justify-content: center;
 }
+
 .red-section {
     background-color: rgb(182, 32, 37);
     color: white;
     padding-top: 6.6vmax;
     padding-bottom: 6.6vmax;
 }
+.red-section-header-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .button-container {
-    margin-top: 17px;
-    height: 66px;
+    box-sizing: content-box;
+    height: auto;
+    padding: 2.4em;
 }
 
 a.red-section-button {
@@ -214,8 +229,9 @@ a.red-section-button {
     letter-spacing: .02em;
     font-size: 1rem;
     border: solid white 2px;
-    margin-top: 17px;
+    margin-top: 30px;
 }
+
 .section-three {
     display: flex;
     flex-direction: column;
@@ -225,6 +241,7 @@ a.red-section-button {
     display: flex;
     flex-direction: column;
 }
+
 .section-content {
     box-sizing: content-box;
     font-weight: 400;
@@ -245,51 +262,66 @@ a.red-section-button {
     justify-content: center;
     margin: auto;
 }
+
 .address-wrapper {
-    flex-direction: column;
+   
     justify-content: center;
     align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
+
 .open-hours-info-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 36px;
+    justify-content: space-between;
+    
     margin-left: auto;
     margin-right: auto;
+    width: 60vw;
     max-width: 1200px
 }
+
 .open-hours {
-    padding-top: 17px;
+    padding: 17px;
 
 }
 .footer-content-wrapper {
     display: flex;
-    flex-direction: row;
-    align-self: center;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-items: space-between;
     align-items: center;
-    gap: 0;
-    max-width: 1200px;
-   
+    text-align: center;
+    padding: 6vw;    
+    margin-top: 20px;
+    
 }
 
-h3.footer-block {
-    margin: 0px;
+.row-item-one {
+    padding-left: 0px;
+    padding-right: auto;
+    margin-left: 0px;
+    justify-self: flex-start;
+    
 }
+
 .block {
     padding-left: 17px;
     padding-right: 17px;
-    text-align: left;
-    align-items: flex-start;
+    
+   
 }
+
 .icons-wrapper {
     display: flex;
     flex-direction: row;
+    justify-self: center;
     box-sizing: border-box;
     width: 50px;
     gap: 15px;
+    
 }
+
 #navModal {
     display: none;
     position: absolute;
@@ -300,6 +332,8 @@ h3.footer-block {
     background-color: white;
 
 }
+
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 471px) {
     .section-content {
@@ -409,6 +443,7 @@ h3.footer-block {
         will-change: transform, width;
         cursor: inherit;
     }
+    
     .bottom-bun.active {
         transform: translatex(3.5px) translateY(-6px) rotate(135deg);
         width: 28px;
@@ -423,12 +458,15 @@ h3.footer-block {
 
     }
     
-    .footer-content-wrapper {
-        flex-direction: column;
-       
-        padding: 6vw;    
-        
+    .row-item-one {
+        margin-bottom: 20px;
     }
+
+    .icons-wrapper {
+        margin-top: 20px;
+    }
+    
+   
     
  }
 /* Medium devices */
@@ -442,15 +480,16 @@ h3.footer-block {
         padding-bottom: 2.5vw;
         padding-left: 4vw;
         padding-right: 4vw;
-   }
-   .icons-wrapper {
-    margin-left: 8px;
-   }
-   .navbar-burger {
-    display: none;
-   }
+    }
    
-   .homepage-menu {
+    .navbar-burger {
+        display: none;
+    }
+    .nav-items-wrapper {
+        text-align: left;
+
+    }
+    .homepage-menu {
         padding: 17px;
         margin-top: 2rem;
         margin-left: auto;
@@ -462,30 +501,48 @@ h3.footer-block {
         display: flex;
         flex-direction: column;
         z-index: 10;
-}
-   h3 {
-        
-        margin-bottom: 2rem;
     }
+    
+  
+
     .content-wrapper {
         display: flex;
         justify-content: space-between;
         max-width: 1200px;
     }
+
+
+}
+/* BREAKPOINTS FOR MED-LARGE
+1024 IS 
+1100-1200 GOOD max container size
+
+
+
+
+/* Large devices (desktops, 820px and up)*/
+@media (min-width: 820px) {
+   
+
     .footer-content-wrapper {
         display: flex;
         flex-direction: row;
+        align-self: center;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        max-width: 1200px;
+   
     }
-}
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-    
 }
 
 /* Extra large devices (desktops, 992px and up)*/
 @media (min-width: 1200px) { 
     /* display the full navbar and set the max width for this vw 
         also look into image quality and display 
+            FOOTER should be vertically aligned until 820px
+
+
     */
     .header {
         z-index: 10;
@@ -497,8 +554,8 @@ h3.footer-block {
         -webkit-tap-highlight-color: rgba(0,0,0,0);
         }   
 }
-.is-visible {
-    opacity: 1;
+    .is-visible {
+        opacity: 1;
 }
    /*
 ** 702 pixels tall for background image
