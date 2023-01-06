@@ -1,0 +1,45 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 2rem;  
+}
+
+h2 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc((2.2 - 1) * 1.2vw + 1.125rem);
+}
+
+h3 {
+ 
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc((2.2 - 1) * 1.2vw + 1.125rem);
+  margin: 0;
+}
+
+p {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+a {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  color: hsl(329.9999999999999, 2.4390243902439024%, 16.07843137254902%);
+  text-decoration: none;
+}

@@ -4,13 +4,14 @@
   "description": "Front End Example Website",
   "main": "index.html",
   "scripts": {
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Elliot Harrison / designed by Nicole Wang Studio",
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.6.1"
+  },
+  "devDependencies": {
+    "sass": "^1.57.1"
   }
 }

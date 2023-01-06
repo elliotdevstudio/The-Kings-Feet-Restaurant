@@ -1,0 +1,187 @@
+.homepage-menu {
+  display: flex;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  margin-top: 2rem;
+}
+
+.homepage-link {
+  box-sizing: content-box;
+  color: white;
+  font-size: calc((4 - 1) * calc(.012 * min(100vh, 900px)) + 2.5rem);
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration-line: none;
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+.section-one {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url('../../assets/images/PestoChicken.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: auto;
+  min-height: calc(100vh - 16.5vh);
+  background-position: center center;
+  background-attachment: scroll;
+  object-position: 50% 50%;
+  z-index: 5;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.section-one:before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(42, 40, 41);
+  opacity: 0.15;
+  z-index: -1;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.section-two {
+  margin-top: 0xp;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* THIS COULD POSSIBLY BE USED IN A MORE GLOBAL FOLDER */
+.red-section {
+  background-color: rgb(182, 32, 37);
+  color: white;
+  padding-top: 6.6vmax;
+  padding-bottom: 6.6vmax;
+}
+
+h2.red-section-header-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+.section-three {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.4em;
+  padding-bottom: 2.4em;
+  gap: 2em; 
+}
+
+.address-wrapper {
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.open-hours-info-wrapper {
+  width: 60vw;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.open-hours {
+  padding: 17px;
+
+}
+
+
+.row-item-one {
+  padding-left: 0px;
+  padding-right: auto;
+  margin-left: 0px;
+  justify-self: flex-start;
+  
+}
+
+/* extra small devices of 471px and below */
+@media (min-width: 471px) {
+  .address-wrapper {
+    align-content: center;
+    text-align: center;
+  }
+}
+/* Small devices 767px and lower */
+@media (max-width: 767px) { 
+  .homepage-menu {
+    padding: 17px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    display: flex;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+
+ 
+
+  .row-item-one {
+    margin-bottom: 20px;
+  }
+
+  .icons-wrapper {
+    margin-top: 20px;
+  }
+}
+/* Medium devices (768px and up) */
+@media (min-width: 768px) { 
+  .homepage-menu {
+    padding: 17px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+  .open-hours-info-wrapper {
+    flex-direction: row;
+  
+  }
+
+}
+
+/* Large devices (desktops, 820px and up)*/
+@media (min-width: 820px) {
+
+}
+
+/* Extra large devices (desktops, 992px and up)*/
+@media (min-width: 1200px) { 
+  /* display the full navbar and set the max width for this vw 
+      also look into image quality and display 
+          FOOTER should be vertically aligned until 820px
+
+  */
+}

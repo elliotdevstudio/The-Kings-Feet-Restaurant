@@ -1,0 +1,773 @@
+@import url("https://use.typekit.net/grx8rwo.css");
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+}
+
+h3 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+  margin: 0;
+}
+
+p {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+a {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  color: hsl(330deg, 2.4390243902%, 16.0784313725%);
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
+.product-card-wrapper.odd {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  object-fit: contain;
+  width: 92vw;
+  justify-self: center;
+  align-items: center;
+  margin: auto;
+  overflow: none;
+}
+
+.product-card-wrapper.even {
+  display: flex;
+  flex-direction: column-reverse;
+  box-sizing: border-box;
+  object-fit: contain;
+  width: 92vw;
+  justify-self: center;
+  align-items: center;
+  margin: auto;
+  overflow: none;
+}
+
+.product-image-container {
+  width: 100%;
+  height: auto;
+  position: top;
+}
+
+.product-card-description {
+  width: 100%;
+  margin: auto;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+/*
+ .product-card-wrapper:nth-of-type(odd) {
+      flex-direction: column-reverse; 
+      box-sizing: border-box;
+      object-fit: contain;
+      width: 92vw;
+      justify-self: center;
+      align-items: center;
+      margin: auto;
+      overflow: none;
+  }
+*/
+.product-image {
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  overflow: none;
+  margin-top: 0;
+}
+
+.start-position-left {
+  transform: matrix(1, 0, 0, 1, -14, 0);
+}
+
+.start-position-right {
+  transform: matrix(1, 0, 0, 1, 14, 0);
+}
+
+h3.product-card-heading {
+  align-self: center;
+  margin: 0px;
+  text-align: center;
+}
+
+.product-card-description.is-visible.left {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card-description.is-visible.right {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-image-container.is-visible.left {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-image-container.is-visible.right {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 472px) {
+  .product-card-wrapper.odd {
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+    justify-content: space-between;
+    object-fit: contain;
+    overflow: none;
+    padding-top: 6vmax;
+    padding-bottom: 6vmax;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    gap: 4vw;
+  }
+  .product-card-wrapper.even {
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+    justify-content: space-between;
+    object-fit: contain;
+    overflow: none;
+    padding-top: 6vmax;
+    padding-bottom: 6vmax;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    gap: 4vw;
+  }
+  .product-card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 44%;
+    opacity: 0;
+    will-change: transform, opacity;
+  }
+  .product-image-container {
+    box-sizing: content-box;
+    width: 46%;
+    height: auto;
+    object-fit: contain;
+    overflow: none;
+    opacity: 0;
+    will-change: transform, opacity;
+  }
+}
+.button-container {
+  box-sizing: content-box;
+  height: auto;
+  margin-top: 2.4em;
+  margin-bottom: 2.4em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a.red-section-button {
+  padding: 1.2em 2.004em;
+  width: 100%;
+  align-self: center;
+  font-family: source-code-pro, monospace;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 1rem;
+  border: solid white 2px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navModal {
+  display: none;
+  position: absolute;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  background-color: white;
+}
+
+footer {
+  min-height: 33vh;
+}
+
+.footer-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 6vw;
+  margin-top: 20px;
+}
+
+/* extra small devices of 471px and below */
+/* Small devices 767px and lower */
+/* Medium devices (768px and up) */
+/* Large devices (desktops, 820px and up)*/
+@media (min-width: 820px) {
+  .footer-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    max-width: 1200px;
+  }
+}
+/* Extra large devices (desktops, 992px and up)*/
+@media (min-width: 1200px) {
+  /* display the full navbar and set the max width for this vw 
+      also look into image quality and display 
+          FOOTER should be vertically aligned until 820px
+
+  */
+}
+.block-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content {
+  box-sizing: content-box;
+  font-weight: 400;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  text-size-adjust: 100%;
+  overflow-wrap: break-word;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+/* was originally in home.scss */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.block {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.content-wrapper {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  position: relative;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  box-sizing: border-box;
+  width: 50px;
+  gap: 15px;
+}
+
+/* extra small devices of 471px and below */
+@media (max-width: 471px) {
+  .section-content {
+    text-align: left;
+  }
+}
+/* Small devices 767px and lower */
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+  }
+}
+/* Large devices (desktops, 820px and up)*/
+/* Extra large devices (desktops, 992px and up)*/
+@media (min-width: 1200px) {
+  /* display the full navbar and set the max width for this vw 
+      also look into image quality and display 
+          FOOTER should be vertically aligned until 820px
+
+  */
+}
+.navbar {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 16.5vh;
+  pointer-events: auto;
+  background-color: white;
+  overflow: none;
+}
+
+.navbar-wrapper {
+  position: relative;
+  width: 92vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  overflow: none;
+}
+
+.nav-items-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  justify-self: flex-end;
+}
+
+.icons-wrapper {
+  padding: 10px;
+}
+
+.header-logo-container {
+  box-sizing: content-box;
+  max-height: 86px;
+  width: auto;
+  object-fit: contain;
+  margin: 0px;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+.header-title-logo {
+  width: auto;
+  max-height: 86px;
+  align-self: center;
+  overflow: none;
+}
+
+.header-nav-item {
+  padding: 10px;
+  text-align: left;
+}
+
+a.navlink {
+  text-decoration-color: hsl(330deg, 2.4390243902%, 16.0784313725%);
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+/* THIS SECTION NEEDS TO BE REFACTORED AND ACCOUNT FOR A MIN VALUE BREAKPOINT
+/* INSTEAD OF THE MAX 
+
+/* Small devices 767px and lower */
+@media (max-width: 767px) {
+  .navbar-wrapper {
+    box-sizing: border-box;
+    max-height: 86px;
+    width: 86vw;
+  }
+  .header-logo-container {
+    display: flex;
+    max-height: 86px;
+    width: auto;
+    object-fit: contain;
+  }
+  .header-content-div {
+    padding-top: 6vw;
+    padding-right: 6vw;
+    padding-bottom: 6vw;
+    padding-left: 6vw;
+  }
+  .nav-items-wrapper {
+    display: none;
+  }
+  .navbar-burger {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: white;
+  }
+  .navbar-burger.active {
+    background-color: red;
+    transform: translatex(-3.5px) rotate(-135deg);
+  }
+  .top-bun {
+    display: block;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 1px;
+    margin: none;
+    background-color: rgb(0, 0, 0);
+    transition: transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1), width 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
+    will-change: transform, width;
+    cursor: inherit;
+  }
+  .top-bun.active {
+    transform: translatex(3.5px) translateY(5px) rotate(-135deg);
+    width: 28px;
+  }
+  .patty {
+    display: block;
+    position: absolute;
+    width: 100%;
+    transform: scale(0);
+  }
+  .bottom-bun {
+    display: block;
+    content: "";
+    left: 0;
+    margin: none;
+    width: 100%;
+    transition: transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1), width 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
+    will-change: transform, width;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    will-change: transform, width;
+    cursor: inherit;
+  }
+  .bottom-bun.active {
+    transform: translatex(3.5px) translateY(-6px) rotate(135deg);
+    width: 28px;
+  }
+}
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+  .header-content-div {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .navbar-burger {
+    display: none;
+  }
+  .nav-items-wrapper {
+    text-align: left;
+  }
+}
+/* Large devices (desktops, 820px and up)*/
+/* Extra large devices (desktops, 992px and up)*/
+@media (min-width: 1200px) {
+  .header {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    line-height: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  /* display the full navbar and set the max width for this viewport width
+          FOOTER should be vertically aligned until 820px
+  */
+}
+.gallery-lightbox-background {
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.gallery-lightbox-close-btn {
+  color: #2a2829;
+}
+
+.gallery-lightbox-close-btn {
+  border-radius: 0.15em;
+  box-sizing: border-box;
+  pointer-events: auto;
+  opacity: 0.75;
+  transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  margin: 0;
+  background: transparent;
+}
+
+.gallery-lightbox-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5vw 1.5vw 0;
+}
+
+.gallery-lightbox {
+  position: fixed;
+  flex-direction: column;
+  box-sizing: border-box;
+  user-select: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  padding: calc(3vw + 20px) 3vw;
+}
+
+/* extra small devices of 471px and below */
+/* Small devices 767px and lower */
+/* Medium devices (768px and up) */
+/* Large devices (desktops, 820px and up)*/
+/* Extra large devices (desktops, 992px and up)*/
+@media (min-width: 1200px) {
+  /* display the full navbar and set the max width for this vw 
+      also look into image quality and display 
+          FOOTER should be vertically aligned until 820px
+
+  */
+}
+.homepage-menu {
+  display: flex;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  margin-top: 2rem;
+}
+
+.homepage-link {
+  box-sizing: content-box;
+  color: white;
+  font-size: calc(3 * 0.012 * min(100vh, 900px) + 2.5rem);
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration-line: none;
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+.section-one {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url("../../assets/images/PestoChicken.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: auto;
+  min-height: 83.5vh;
+  background-position: center center;
+  background-attachment: scroll;
+  object-position: 50% 50%;
+  z-index: 5;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.section-one:before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(42, 40, 41);
+  opacity: 0.15;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.section-two {
+  margin-top: 0xp;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* THIS COULD POSSIBLY BE USED IN A MORE GLOBAL FOLDER */
+.red-section {
+  background-color: rgb(182, 32, 37);
+  color: white;
+  padding-top: 6.6vmax;
+  padding-bottom: 6.6vmax;
+}
+
+h2.red-section-header-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-three {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.4em;
+  padding-bottom: 2.4em;
+  gap: 2em;
+}
+
+.address-wrapper {
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.open-hours-info-wrapper {
+  width: 60vw;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.open-hours {
+  padding: 17px;
+}
+
+.row-item-one {
+  padding-left: 0px;
+  padding-right: auto;
+  margin-left: 0px;
+  justify-self: flex-start;
+}
+
+/* extra small devices of 471px and below */
+@media (min-width: 471px) {
+  .address-wrapper {
+    align-content: center;
+    text-align: center;
+  }
+}
+/* Small devices 767px and lower */
+@media (max-width: 767px) {
+  .homepage-menu {
+    padding: 17px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    display: flex;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+  .row-item-one {
+    margin-bottom: 20px;
+  }
+  .icons-wrapper {
+    margin-top: 20px;
+  }
+}
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+  .homepage-menu {
+    padding: 17px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+  .open-hours-info-wrapper {
+    flex-direction: row;
+  }
+}
+/* Large devices (desktops, 820px and up)*/
+/* Extra large devices (desktops, 992px and up)*/
+@media (min-width: 1200px) {
+  /* display the full navbar and set the max width for this vw 
+      also look into image quality and display 
+          FOOTER should be vertically aligned until 820px
+
+  */
+}
+/* extra small devices of 471px and below */
+/* Small devices 767px and lower */
+/* Medium devices (768px and up) */
+/* Large devices (desktops, 820px and up)*/
+/* Extra large devices (desktops, 992px and up)*/
+@media (min-width: 1200px) {
+  /* display the full navbar and set the max width for this vw 
+      also look into image quality and display 
+          FOOTER should be vertically aligned until 820px
+
+  */
+}
+
+/*# sourceMappingURL=main.css.map */
