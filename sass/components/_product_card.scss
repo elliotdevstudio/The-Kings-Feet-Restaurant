@@ -8,8 +8,9 @@
   width: 92vw;
   justify-self: center;
   align-items: center;
-  margin: auto;
   overflow: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product-card-wrapper.even {
   display: flex;
@@ -19,8 +20,9 @@
   width: 92vw;
   justify-self: center;
   align-items: center;
-  margin: auto;
   overflow: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product-image-container {
   width: 100%;
@@ -104,7 +106,7 @@ h3.product-card-heading {
     padding-bottom: 6vmax;
     padding-left: 4vw;
     padding-right: 4vw;
-    gap: 4vw;
+
   }
   .product-card-wrapper.even {
     display: flex;
@@ -117,7 +119,7 @@ h3.product-card-heading {
     padding-bottom: 6vmax;
     padding-left: 4vw;
     padding-right: 4vw;
-    gap: 4vw;
+   
   }
   .product-card-description {
     display:flex;

@@ -56,7 +56,7 @@ function loop() {
         }
     });
     scroll(loop);
-};
+}
 loop();
 
 function isElementInViewport(el){

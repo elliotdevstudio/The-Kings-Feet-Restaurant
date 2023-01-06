@@ -34,6 +34,7 @@ p {
   font-family: source-code-pro, monospace;
   font-weight: 200;
   font-style: normal;
+  font-size: calc(1.44vw + 0.5rem);
 }
 
 a {
@@ -56,8 +57,9 @@ a {
   width: 92vw;
   justify-self: center;
   align-items: center;
-  margin: auto;
   overflow: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product-card-wrapper.even {
@@ -68,8 +70,9 @@ a {
   width: 92vw;
   justify-self: center;
   align-items: center;
-  margin: auto;
   overflow: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product-image-container {
@@ -156,7 +159,6 @@ h3.product-card-heading {
     padding-bottom: 6vmax;
     padding-left: 4vw;
     padding-right: 4vw;
-    gap: 4vw;
   }
   .product-card-wrapper.even {
     display: flex;
@@ -169,7 +171,6 @@ h3.product-card-heading {
     padding-bottom: 6vmax;
     padding-left: 4vw;
     padding-right: 4vw;
-    gap: 4vw;
   }
   .product-card-description {
     display: flex;
@@ -376,6 +377,7 @@ footer {
   align-items: center;
   text-align: left;
   justify-self: flex-end;
+  margin-right: 10px;
 }
 
 .icons-wrapper {
@@ -653,8 +655,13 @@ a.navlink {
 .red-section {
   background-color: rgb(182, 32, 37);
   color: white;
-  padding-top: 6.6vmax;
-  padding-bottom: 6.6vmax;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+h3.red-section-header-text {
+  padding: 17px;
+  text-align: center;
 }
 
 h2.red-section-header-text {
@@ -668,8 +675,8 @@ h2.red-section-header-text {
 .section-three {
   display: flex;
   flex-direction: column;
-  padding-top: 2.4em;
-  padding-bottom: 2.4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   gap: 2em;
 }
 
@@ -707,6 +714,11 @@ h2.red-section-header-text {
   .address-wrapper {
     align-content: center;
     text-align: center;
+  }
+  .section-three {
+    gap: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 /* Small devices 767px and lower */

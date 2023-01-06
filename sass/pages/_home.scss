@@ -66,9 +66,14 @@
 .red-section {
   background-color: rgb(182, 32, 37);
   color: white;
-  padding-top: 6.6vmax;
-  padding-bottom: 6.6vmax;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
+h3.red-section-header-text {
+  padding: 17px;
+  text-align: center;
+}
+
 
 h2.red-section-header-text {
   margin-top: 20px;
@@ -76,14 +81,13 @@ h2.red-section-header-text {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-
 }
 
 .section-three {
   display: flex;
   flex-direction: column;
-  padding-top: 2.4em;
-  padding-bottom: 2.4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   gap: 2em; 
 }
 
@@ -107,16 +111,13 @@ h2.red-section-header-text {
 
 .open-hours {
   padding: 17px;
-
 }
-
 
 .row-item-one {
   padding-left: 0px;
   padding-right: auto;
   margin-left: 0px;
   justify-self: flex-start;
-  
 }
 
 /* extra small devices of 471px and below */
@@ -124,6 +125,11 @@ h2.red-section-header-text {
   .address-wrapper {
     align-content: center;
     text-align: center;
+  }
+  .section-three {
+    gap: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 /* Small devices 767px and lower */
@@ -139,8 +145,6 @@ h2.red-section-header-text {
     flex-direction: column;
     z-index: 10;
   }
-
- 
 
   .row-item-one {
     margin-bottom: 20px;
