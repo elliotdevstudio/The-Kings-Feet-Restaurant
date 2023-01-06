@@ -1,3 +1,7 @@
+
+/*   THIS WILL BE IMPLEMENTED IN THE NEAR FUTURE   */
+
+
 $breakpoints: (
   'xs-small' : (min-width: 472px),
   'small'  : ( min-width:  767px ),
@@ -21,15 +25,13 @@ $breakpoints: (
   }
 }
 
-@media (max-width: 471px) {
 
-}
 
 @media (min-width: 472px){
   /*  use @include for the two items values that use this  */
 }
 /* Small devices 767px and lower */
-@media (max-width: 767px) { 
+@media (min-width: 767px) { 
 
 }
 /* Medium devices (768px and up) */

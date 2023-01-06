@@ -11,7 +11,7 @@
 .homepage-link {
   box-sizing: content-box;
   color: white;
-  font-size: calc((4 - 1) * calc(.012 * min(100vh, 900px)) + 2.5rem);
+  font-size: 45px;
   font-family: Blackriver-bold;
   font-weight: 400;
   font-style: normal;
@@ -121,19 +121,10 @@ h2.red-section-header-text {
 }
 
 /* extra small devices of 471px and below */
-@media (min-width: 471px) {
-  .address-wrapper {
-    align-content: center;
-    text-align: center;
+@media (min-width: 472px) {
+  .homepage-link {
+    font-size: calc(3 * calc(.012 * min(100vh, 900px)) + 2.5rem);
   }
-  .section-three {
-    gap: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-/* Small devices 767px and lower */
-@media (max-width: 767px) { 
   .homepage-menu {
     padding: 17px;
     margin-left: 4vw;
@@ -145,11 +136,23 @@ h2.red-section-header-text {
     flex-direction: column;
     z-index: 10;
   }
+  .address-wrapper {
+    align-content: center;
+    text-align: center;
+  }
 
+  .section-three {
+    gap: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+/* Small devices 767px and lower */
+@media (max-width: 767px) { 
+  
   .row-item-one {
     margin-bottom: 20px;
   }
-
   .icons-wrapper {
     margin-top: 20px;
   }
