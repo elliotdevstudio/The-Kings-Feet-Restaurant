@@ -75,10 +75,21 @@ a {
   margin-right: auto;
 }
 
+h3.product-card-heading {
+  align-self: center;
+  margin: 0px;
+  text-align: center;
+}
+
 .product-image-container {
+  box-sizing: content-box;
   width: 100%;
   height: auto;
-  position: top;
+  object-fit: contain;
+  overflow: none;
+  opacity: 0;
+  transition-property: opacity;
+  will-change: transform, opacity;
 }
 
 .product-card-description {
@@ -87,20 +98,11 @@ a {
   justify-self: center;
   align-self: center;
   text-align: center;
+  opacity: 0;
+  transition-property: opacity;
+  will-change: transform, opacity;
 }
 
-/*
- .product-card-wrapper:nth-of-type(odd) {
-      flex-direction: column-reverse; 
-      box-sizing: border-box;
-      object-fit: contain;
-      width: 92vw;
-      justify-self: center;
-      align-items: center;
-      margin: auto;
-      overflow: none;
-  }
-*/
 .product-image {
   height: auto;
   width: 100%;
@@ -117,32 +119,12 @@ a {
   transform: matrix(1, 0, 0, 1, 14, 0);
 }
 
-h3.product-card-heading {
-  align-self: center;
-  margin: 0px;
-  text-align: center;
-}
-
-.product-card-description.is-visible.left {
-  opacity: 1;
+.is-visible.left {
   transform: matrix(1, 0, 0, 1, 0, 0);
   transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-card-description.is-visible.right {
-  opacity: 1;
-  transform: matrix(1, 0, 0, 1, 0, 0);
-  transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.product-image-container.is-visible.left {
-  opacity: 1;
-  transform: matrix(1, 0, 0, 1, 0, 0);
-  transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.product-image-container.is-visible.right {
-  opacity: 1;
+.is-visible.right {
   transform: matrix(1, 0, 0, 1, 0, 0);
   transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -178,7 +160,6 @@ h3.product-card-heading {
     justify-content: center;
     text-align: center;
     width: 44%;
-    opacity: 0;
     will-change: transform, opacity;
   }
   .product-image-container {
@@ -187,7 +168,6 @@ h3.product-card-heading {
     height: auto;
     object-fit: contain;
     overflow: none;
-    opacity: 0;
     will-change: transform, opacity;
   }
 }
@@ -340,14 +320,14 @@ footer {
   */
 }
 .navbar {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 0px;
-  left: 0px;
   width: 100vw;
   height: 16.5vh;
   pointer-events: auto;
@@ -589,18 +569,22 @@ a.navlink {
 }
 .homepage-menu {
   display: flex;
+  justify-content: center;
   position: relative;
-  height: 100%;
-  display: flex;
+  margin-left: 8vw;
+  margin-right: 4vw;
+  height: 83.5vh;
   flex-direction: column;
-  z-index: 10;
-  margin-top: 2rem;
+  margin-top: 16.5vh;
+  margin-bottom: 0;
+  padding-top: auto;
+  padding-bottom: auto;
 }
 
 .homepage-link {
   box-sizing: content-box;
   color: white;
-  font-size: calc(3 * 0.012 * min(100vh, 900px) + 2.5rem);
+  font-size: 50px;
   font-family: Blackriver-bold;
   font-weight: 400;
   font-style: normal;
@@ -611,6 +595,7 @@ a.navlink {
 
 .section-one {
   position: relative;
+  box-sizing: content-box;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -619,11 +604,10 @@ a.navlink {
   background-size: cover;
   color: white;
   width: 100%;
-  height: auto;
+  height: 100vh;
   min-height: 83.5vh;
-  background-position: center center;
+  background-position: 50% 85%;
   background-attachment: scroll;
-  object-position: 50% 50%;
   z-index: 5;
   padding-top: auto;
   padding-bottom: auto;
@@ -710,7 +694,21 @@ h2.red-section-header-text {
 }
 
 /* extra small devices of 471px and below */
-@media (min-width: 471px) {
+@media (min-width: 472px) {
+  .homepage-link {
+    font-size: calc(3 * 0.012 * min(100vh, 900px) + 1.75rem);
+  }
+  .homepage-menu {
+    padding: 17px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    display: flex;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
   .address-wrapper {
     align-content: center;
     text-align: center;
@@ -723,17 +721,6 @@ h2.red-section-header-text {
 }
 /* Small devices 767px and lower */
 @media (max-width: 767px) {
-  .homepage-menu {
-    padding: 17px;
-    margin-left: 4vw;
-    margin-right: 4vw;
-    display: flex;
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    z-index: 10;
-  }
   .row-item-one {
     margin-bottom: 20px;
   }
@@ -745,7 +732,6 @@ h2.red-section-header-text {
 @media (min-width: 768px) {
   .homepage-menu {
     padding: 17px;
-    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
