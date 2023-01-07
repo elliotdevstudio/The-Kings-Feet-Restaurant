@@ -6,6 +6,6 @@ So far I've concentrated on getting the homepage just right, and have pulled in 
 
 WINS 
 
-This has been a great learning experience in better understanding how to work with images, animations, and various layout tools and strategies. I'm looking forward to setting up the gallery page, since that will be one of the most tricky to build! 
+This has been a great learning experience in better understanding how to work with images, animations, and various layout tools and strategies. Most significantly, the exposure to challenges presented by achieving very nuanced bahavior through media queries, and working out any unintended side-effects, has ehanced my front-end problem solving. I'm looking forward to setting up the gallery page, since that will be one of the most tricky to build! 
 
 Thank you for checking out my work-- I'll push more updates as soon as I can!
