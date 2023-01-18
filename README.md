@@ -1,8 +1,8 @@
-This website was formerly used for a restaurant called 'The King's Feet', located in Berkeley, CA, and this current version is a rebuild from scratch that is intended to serve as a front-end example of my work, done manually with HTML5, CSS, and javascript (without use of any CSS frameworks).
+This website was formerly used for a restaurant called 'The King's Feet', located in Berkeley, CA, and this current version is a rebuild from scratch that is intended to serve as a front-end example of my work, done manually with HTML5, SASS, and javascript.
 
 CURRENT STATE OF THE PAGE, AND CHALLENGES 
 
-So far I've concentrated on getting the homepage just right, and have pulled in a 7-1 approach to organizing SASS files before moving on to the next pages. While things seem to be working well with this arrangment, the main issue that I plan to address later is to assign breakpoint mixins to the pages. 
+So far I've concentrated on getting the homepage fully completed to establish responsiveness and some of the layout patterns, and have pulled in a 7-1 approach to organizing SASS files before moving on to the next pages. While things seem to be working well with this arrangment, the main issue that I plan to address later is to assign breakpoint mixins. 
 
 WINS 
 
