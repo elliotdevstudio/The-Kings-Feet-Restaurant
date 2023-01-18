@@ -34,7 +34,7 @@ p {
   font-family: source-code-pro, monospace;
   font-weight: 200;
   font-style: normal;
-  font-size: calc(1.44vw + 0.5rem);
+  font-size: calc(1.44vw + 0.3rem);
 }
 
 a {
