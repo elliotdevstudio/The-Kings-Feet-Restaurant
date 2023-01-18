@@ -1,17 +1,22 @@
 .homepage-menu {
   display: flex;
+  justify-content: center;
   position: relative;
-  height: 100%;
-  display: flex;
+  margin-left: 8vw;
+  margin-right: 4vw;
+  height: calc(100vh - 16.5vh);
   flex-direction: column;
-  z-index: 10;
-  margin-top: 2rem;
+  margin-top: 16.5vh;
+  margin-bottom: 0;
+  padding-top: auto;
+  padding-bottom: auto;
 }
+
 
 .homepage-link {
   box-sizing: content-box;
   color: white;
-  font-size: calc((4 - 1) * calc(.012 * min(100vh, 900px)) + 2.5rem);
+  font-size: 50px;
   font-family: Blackriver-bold;
   font-weight: 400;
   font-style: normal;
@@ -22,6 +27,7 @@
 
 .section-one {
   position: relative;
+  box-sizing: content-box;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,11 +36,10 @@
   background-size: cover;
   color: white;
   width: 100%;
-  height: auto;
+  height: 100vh;
   min-height: calc(100vh - 16.5vh);
-  background-position: center center;
+  background-position: 50% 85%;
   background-attachment: scroll;
-  object-position: 50% 50%;
   z-index: 5;
   padding-top: auto;
   padding-bottom: auto;
@@ -66,9 +71,14 @@
 .red-section {
   background-color: rgb(182, 32, 37);
   color: white;
-  padding-top: 6.6vmax;
-  padding-bottom: 6.6vmax;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
+h3.red-section-header-text {
+  padding: 17px;
+  text-align: center;
+}
+
 
 h2.red-section-header-text {
   margin-top: 20px;
@@ -76,14 +86,13 @@ h2.red-section-header-text {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-
 }
 
 .section-three {
   display: flex;
   flex-direction: column;
-  padding-top: 2.4em;
-  padding-bottom: 2.4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   gap: 2em; 
 }
 
@@ -107,27 +116,20 @@ h2.red-section-header-text {
 
 .open-hours {
   padding: 17px;
-
 }
-
 
 .row-item-one {
   padding-left: 0px;
   padding-right: auto;
   margin-left: 0px;
   justify-self: flex-start;
-  
 }
 
 /* extra small devices of 471px and below */
-@media (min-width: 471px) {
-  .address-wrapper {
-    align-content: center;
-    text-align: center;
+@media (min-width: 472px) {
+  .homepage-link {
+    font-size: calc(3 * calc(.012 * min(100vh, 900px)) + 1.75rem);
   }
-}
-/* Small devices 767px and lower */
-@media (max-width: 767px) { 
   .homepage-menu {
     padding: 17px;
     margin-left: 4vw;
@@ -139,13 +141,23 @@ h2.red-section-header-text {
     flex-direction: column;
     z-index: 10;
   }
+  .address-wrapper {
+    align-content: center;
+    text-align: center;
+  }
 
- 
-
+  .section-three {
+    gap: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+/* Small devices 767px and lower */
+@media (max-width: 767px) { 
+  
   .row-item-one {
     margin-bottom: 20px;
   }
-
   .icons-wrapper {
     margin-top: 20px;
   }
@@ -154,7 +166,6 @@ h2.red-section-header-text {
 @media (min-width: 768px) { 
   .homepage-menu {
     padding: 17px;
-    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -182,6 +193,5 @@ h2.red-section-header-text {
   /* display the full navbar and set the max width for this vw 
       also look into image quality and display 
           FOOTER should be vertically aligned until 820px
-
   */
 }
