@@ -1,22 +1,31 @@
+@import '../abstracts/mixins';
+
+
 .homepage-menu {
   display: flex;
   justify-content: center;
   position: relative;
   margin-left: 8vw;
-  margin-right: 4vw;
+  margin-right: auto;
   height: calc(100vh - 16.5vh);
   flex-direction: column;
   margin-top: 16.5vh;
   margin-bottom: 0;
   padding-top: auto;
   padding-bottom: auto;
+  @include breakpoint('small'){
+    margin-left: 15vw;
+  }
+  @include breakpoint('medium'){
+    width: 75%;
+    padding-left: 20px; 
+  }
 }
-
 
 .homepage-link {
   box-sizing: content-box;
   color: white;
-  font-size: 50px;
+  font-size: calc((4 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
   font-family: Blackriver-bold;
   font-weight: 400;
   font-style: normal;
@@ -50,9 +59,9 @@
   width: 100%;
   height: 100%;
   background: rgb(42, 40, 41);
-  opacity: 0.15;
+  opacity: 0.10;
   z-index: -1;
-  content: '';
+  content:'';
   position: absolute;
   left: 0;
   top: 0;
@@ -94,6 +103,11 @@ h2.red-section-header-text {
   padding-top: 2em;
   padding-bottom: 2em;
   gap: 2em; 
+  @include breakpoint('small'){
+      gap: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+  }
 }
 
 .address-wrapper {
@@ -101,6 +115,10 @@ h2.red-section-header-text {
   align-items: center;
   margin: 0px;
   padding: 0px;
+  @include breakpoint('small'){
+    align-content: center;
+    text-align: center;
+  }
 }
 
 .open-hours-info-wrapper {
@@ -112,6 +130,9 @@ h2.red-section-header-text {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  @include breakpoint('medium'){
+    flex-direction: row;
+  }
 }
 
 .open-hours {
@@ -122,77 +143,18 @@ h2.red-section-header-text {
   padding-left: 0px;
   padding-right: auto;
   margin-left: 0px;
+  margin-bottom: 20px;
   justify-self: flex-start;
-}
-
-/* extra small devices of 471px and below */
-@media (min-width: 472px) {
-  .homepage-link {
-    font-size: calc(3 * calc(.012 * min(100vh, 900px)) + 1.75rem);
-  }
-  .homepage-menu {
-    padding: 17px;
-    margin-left: 4vw;
-    margin-right: 4vw;
-    display: flex;
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    z-index: 10;
-  }
-  .address-wrapper {
-    align-content: center;
-    text-align: center;
-  }
-
-  .section-three {
-    gap: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-/* Small devices 767px and lower */
-@media (max-width: 767px) { 
-  
-  .row-item-one {
-    margin-bottom: 20px;
-  }
-  .icons-wrapper {
-    margin-top: 20px;
-  }
-}
-/* Medium devices (768px and up) */
-@media (min-width: 768px) { 
-  .homepage-menu {
-    padding: 17px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    position: relative;
-    height: 100%;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    z-index: 10;
-  }
-  .open-hours-info-wrapper {
-    flex-direction: row;
-  
+  @include breakpoint('medium'){
+    margin-bottom: 0px;
   }
 
 }
+.icons-wrapper {
+  width: min-content;
+  margin-top: 20px;
 
-/* Large devices (desktops, 820px and up)*/
-@media (min-width: 820px) {
-
-}
-
-/* Extra large devices (desktops, 992px and up)*/
-@media (min-width: 1200px) { 
-  /* display the full navbar and set the max width for this vw 
-      also look into image quality and display 
-          FOOTER should be vertically aligned until 820px
-
-  */
+  @include breakpoint('medium'){
+    margin-top: 0px;
+  }
 }

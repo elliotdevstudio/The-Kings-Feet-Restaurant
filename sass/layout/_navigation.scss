@@ -69,8 +69,13 @@
 }
 
 a.navlink {
-  text-decoration-color: hsl(329.9999999999999, 2.4390243902439024%, 16.07843137254902%);
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  color: hsl(329.9999999999999, 2.4390243902439024%, 16.07843137254902%);
+  text-decoration: none;
 }
+
 .is-visible {
   opacity: 1;
 }

@@ -1,54 +1,16 @@
-
-/*   THIS WILL BE IMPLEMENTED IN THE NEAR FUTURE   */
-
-
 $breakpoints: (
-  'xs-small' : (min-width: 472px),
-  'small'  : ( min-width:  767px ),
-  'medium' : ( min-width:  992px ),
-  'large'  : ( min-width: 1200px )
+  small: 472px,
+  medium: 768px,
+  large: 992px,
+  wide: 1200px
 );
- 
-@mixin respond-to($name) {
-  // If the key exists in the map
-  @if map-has-key($breakpoints, $name) {
-    // Prints a media query based on the value
-    @media #{inspect(map-get($breakpoints, $name))} {
+
+@mixin breakpoint($name) {
+  @if not map-has-key($breakpoints, $name) {
+    @warn "Warning: `#{$name}` is not a valid breakpoint name.";
+  } @else {
+    @media (min-width: map-get($breakpoints, $name)) {
       @content;
     }
   }
-
-  // If the key doesn't exist in the map
-  @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Please make sure it is defined in `$breakpoints` map.";
-  }
-}
-
-
-
-@media (min-width: 472px){
-  /*  use @include for the two items values that use this  */
-}
-/* Small devices 767px and lower */
-@media (min-width: 767px) { 
-
-}
-/* Medium devices (768px and up) */
-@media (min-width: 768px) { 
-
-}
-
-/* Large devices (desktops, 820px and up)*/
-@media (min-width: 820px) {
-
-}
-
-/* Extra large devices (desktops, 992px and up)*/
-@media (min-width: 1200px) { 
-  /* display the full navbar and set the max width for this vw 
-      also look into image quality and display 
-          FOOTER should be vertically aligned until 820px
-
-  */
 }

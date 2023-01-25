@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
 body {
   padding: 0px;
   margin: 0px;
@@ -35,14 +36,6 @@ p {
   font-weight: 200;
   font-style: normal;
   font-size: calc(1.44vw + 0.3rem);
-}
-
-a {
-  font-family: source-code-pro, monospace;
-  font-weight: 200;
-  font-style: normal;
-  color: hsl(330deg, 2.4390243902%, 16.0784313725%);
-  text-decoration: none;
 }
 
 @font-face {
@@ -271,8 +264,13 @@ footer {
 }
 
 .block {
-  padding-left: 17px;
-  padding-right: 17px;
+  padding: 0px;
+}
+@media (min-width: 768px) {
+  .block {
+    padding-left: 0px;
+    padding-right: 4vw;
+  }
 }
 
 .content-wrapper {
@@ -285,6 +283,11 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  .content-wrapper {
+    justify-content: space-between;
+  }
+}
 
 .icons-wrapper {
   display: flex;
@@ -295,30 +298,6 @@ footer {
   gap: 15px;
 }
 
-/* extra small devices of 471px and below */
-@media (max-width: 471px) {
-  .section-content {
-    text-align: left;
-  }
-}
-/* Small devices 767px and lower */
-/* Medium devices (768px and up) */
-@media (min-width: 768px) {
-  .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-  }
-}
-/* Large devices (desktops, 820px and up)*/
-/* Extra large devices (desktops, 992px and up)*/
-@media (min-width: 1200px) {
-  /* display the full navbar and set the max width for this vw 
-      also look into image quality and display 
-          FOOTER should be vertically aligned until 820px
-
-  */
-}
 .navbar {
   position: absolute;
   top: 0;
@@ -387,7 +366,11 @@ footer {
 }
 
 a.navlink {
-  text-decoration-color: hsl(330deg, 2.4390243902%, 16.0784313725%);
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  color: hsl(330deg, 2.4390243902%, 16.0784313725%);
+  text-decoration: none;
 }
 
 .is-visible {
@@ -572,7 +555,7 @@ a.navlink {
   justify-content: center;
   position: relative;
   margin-left: 8vw;
-  margin-right: 4vw;
+  margin-right: auto;
   height: 83.5vh;
   flex-direction: column;
   margin-top: 16.5vh;
@@ -580,11 +563,22 @@ a.navlink {
   padding-top: auto;
   padding-bottom: auto;
 }
+@media (min-width: 472px) {
+  .homepage-menu {
+    margin-left: 15vw;
+  }
+}
+@media (min-width: 768px) {
+  .homepage-menu {
+    width: 75%;
+    padding-left: 20px;
+  }
+}
 
 .homepage-link {
   box-sizing: content-box;
   color: white;
-  font-size: 50px;
+  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
   font-family: Blackriver-bold;
   font-weight: 400;
   font-style: normal;
@@ -618,7 +612,7 @@ a.navlink {
   width: 100%;
   height: 100%;
   background: rgb(42, 40, 41);
-  opacity: 0.15;
+  opacity: 0.1;
   z-index: -1;
   content: "";
   position: absolute;
@@ -663,12 +657,25 @@ h2.red-section-header-text {
   padding-bottom: 2em;
   gap: 2em;
 }
+@media (min-width: 472px) {
+  .section-three {
+    gap: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 
 .address-wrapper {
   justify-content: center;
   align-items: center;
   margin: 0px;
   padding: 0px;
+}
+@media (min-width: 472px) {
+  .address-wrapper {
+    align-content: center;
+    text-align: center;
+  }
 }
 
 .open-hours-info-wrapper {
@@ -681,6 +688,11 @@ h2.red-section-header-text {
   margin-right: auto;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .open-hours-info-wrapper {
+    flex-direction: row;
+  }
+}
 
 .open-hours {
   padding: 17px;
@@ -690,71 +702,25 @@ h2.red-section-header-text {
   padding-left: 0px;
   padding-right: auto;
   margin-left: 0px;
+  margin-bottom: 20px;
   justify-self: flex-start;
 }
-
-/* extra small devices of 471px and below */
-@media (min-width: 472px) {
-  .homepage-link {
-    font-size: calc(3 * 0.012 * min(100vh, 900px) + 1.75rem);
-  }
-  .homepage-menu {
-    padding: 17px;
-    margin-left: 4vw;
-    margin-right: 4vw;
-    display: flex;
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    z-index: 10;
-  }
-  .address-wrapper {
-    align-content: center;
-    text-align: center;
-  }
-  .section-three {
-    gap: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-/* Small devices 767px and lower */
-@media (max-width: 767px) {
-  .row-item-one {
-    margin-bottom: 20px;
-  }
-  .icons-wrapper {
-    margin-top: 20px;
-  }
-}
-/* Medium devices (768px and up) */
 @media (min-width: 768px) {
-  .homepage-menu {
-    padding: 17px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    position: relative;
-    height: 100%;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    z-index: 10;
-  }
-  .open-hours-info-wrapper {
-    flex-direction: row;
+  .row-item-one {
+    margin-bottom: 0px;
   }
 }
-/* Large devices (desktops, 820px and up)*/
-/* Extra large devices (desktops, 992px and up)*/
-@media (min-width: 1200px) {
-  /* display the full navbar and set the max width for this vw 
-      also look into image quality and display 
-          FOOTER should be vertically aligned until 820px
 
-  */
+.icons-wrapper {
+  width: min-content;
+  margin-top: 20px;
 }
+@media (min-width: 768px) {
+  .icons-wrapper {
+    margin-top: 0px;
+  }
+}
+
 /* extra small devices of 471px and below */
 /* Small devices 767px and lower */
 /* Medium devices (768px and up) */
@@ -767,5 +733,60 @@ h2.red-section-header-text {
 
   */
 }
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+}
+
+h3 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+  margin: 0;
+}
+
+p {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(1.44vw + 0.3rem);
+}
+
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
+.main-menu-section {
+  background-color: rgb(182, 32, 37);
+  color: white;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* min 768 
+ menu item  */
 
 /*# sourceMappingURL=main.css.map */

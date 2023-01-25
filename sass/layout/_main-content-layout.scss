@@ -1,3 +1,5 @@
+@import '../abstracts/mixins';
+
 .block-content {
   display: flex;
   flex-direction: column;
@@ -25,8 +27,11 @@
 }
 
 .block {
-  padding-left: 17px;
-  padding-right: 17px;
+  padding: 0px;
+  @include breakpoint('medium'){
+  padding-left: 0px;
+  padding-right: 4vw;
+  }
 }
 .content-wrapper {
   margin-left: 6vw;
@@ -37,6 +42,9 @@
   max-width: 1200px;
   display: flex;
   justify-content: center;
+  @include breakpoint('medium'){
+    justify-content: space-between;
+  }
 }
 .icons-wrapper {
   display: flex;
@@ -47,37 +55,5 @@
   gap: 15px;
   
 }
+ 
 
-/* extra small devices of 471px and below */
-@media (max-width: 471px) {
-  .section-content {
-    text-align: left;
-  }
-}
-/* Small devices 767px and lower */
-@media (max-width: 767px) { 
-
-}
-/* Medium devices (768px and up) */
-@media (min-width: 768px) { 
-  .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-  }
-
-}
-
-/* Large devices (desktops, 820px and up)*/
-@media (min-width: 820px) {
-
-}
-
-/* Extra large devices (desktops, 992px and up)*/
-@media (min-width: 1200px) { 
-  /* display the full navbar and set the max width for this vw 
-      also look into image quality and display 
-          FOOTER should be vertically aligned until 820px
-
-  */
-}

@@ -1,0 +1,18 @@
+@use "../base/colors";
+@use "../base/font_styles";
+@use "../base/typography";
+
+.main-menu-section {
+  background-color: colors.$red-bg;
+  color: colors.$primary-text;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// need mixins for breakpoints... 
+/* min 768 
+ menu item  */
