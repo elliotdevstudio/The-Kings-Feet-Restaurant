@@ -35,7 +35,20 @@ p {
   font-family: source-code-pro, monospace;
   font-weight: 200;
   font-style: normal;
-  font-size: calc(1.44vw + 0.3rem);
+  font-size: calc(1.44vw + 0.4rem);
+}
+
+.product-text {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+@media (min-width: 472px) {
+  .product-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @font-face {
@@ -655,7 +668,7 @@ h2.red-section-header-text {
   flex-direction: column;
   padding-top: 2em;
   padding-bottom: 2em;
-  gap: 2em;
+  gap: 3em;
 }
 @media (min-width: 472px) {
   .section-three {
@@ -768,9 +781,22 @@ p {
   font-family: source-code-pro, monospace;
   font-weight: 200;
   font-style: normal;
-  font-size: calc(1.44vw + 0.3rem);
+  font-size: calc(1.44vw + 0.4rem);
 }
 
+.product-text {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+@media (min-width: 472px) {
+  .product-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 @font-face {
   font-family: Blackriver;
   src: url(".assets/Exported Fonts/Blackriver-Bold.otf");

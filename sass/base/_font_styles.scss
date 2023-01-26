@@ -1,3 +1,5 @@
+@import "../abstracts/mixins";
+
 body {
   padding: 0px;
   margin: 0px;
@@ -34,7 +36,17 @@ p {
   font-family: source-code-pro, monospace;
   font-weight: 200;
   font-style: normal;
-  font-size: calc((2.2 - 1) * 1.2vw + .3rem);
+  font-size: calc((2.2 - 1) * 1.2vw + .40rem);
 }
-
+.product-text {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  @include breakpoint('small'){
+    margin-left: 0;
+    margin-right:0;
+  }
+  
+}
 
