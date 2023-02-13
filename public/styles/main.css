@@ -12,6 +12,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
+  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
   margin-top: 0px;
   margin-bottom: 2rem;
 }
@@ -49,6 +50,13 @@ p {
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+.menu-page-selector {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(1.44vw + 0.4rem);
 }
 
 @font-face {
@@ -758,6 +766,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
+  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
   margin-top: 0px;
   margin-bottom: 2rem;
 }
@@ -797,19 +806,80 @@ p {
     margin-right: 0;
   }
 }
+.menu-page-selector {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(1.44vw + 0.4rem);
+}
+
 @font-face {
   font-family: Blackriver;
   src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
 }
 .main-menu-section {
+  position: relative;
   background-color: rgb(182, 32, 37);
   color: white;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  padding-top: 6.6vmax;
+  padding-bottom: 6.6vmax;
+  margin-top: 16.5vh;
 }
 
-.menu-section {
+.menu-heading {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
+  font-style: normal;
+  text-decoration: none;
+}
+
+.menu-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+  height: min-content;
+}
+
+.menu-selector-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.menu-page-selector {
+  font-size: calc(0 * 0.012 * min(100vh, 900px) + 1rem) !important;
+}
+
+.menu-section-title {
+  font-size: calc(1.2 * 0.012 * min(100vh, 900px) + 1rem) !important;
+  font-weight: 300;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.item-title {
+  font-size: calc(0.6 * 0.012 * min(100vh, 900px) + 1rem) !important;
+  font-family: Abel;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.4em;
+}
+
+.item-description {
+  font-family: source-code-pro, monospace;
+  font-size: calc(0 * 0.012 * min(100vh, 900px) + 1rem) !important;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.7em;
 }
 
 /* min 768 
