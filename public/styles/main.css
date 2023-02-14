@@ -329,7 +329,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 16.5vh;
+  height: 15vh;
   pointer-events: auto;
   background-color: white;
   overflow: none;
@@ -579,7 +579,7 @@ a.navlink {
   margin-right: auto;
   height: 83.5vh;
   flex-direction: column;
-  margin-top: 16.5vh;
+  margin-top: 15vh;
   margin-bottom: 0;
   padding-top: auto;
   padding-bottom: auto;
@@ -825,7 +825,7 @@ p {
   padding-right: 6vw;
   padding-top: 6.6vmax;
   padding-bottom: 6.6vmax;
-  margin-top: 16.5vh;
+  margin-top: 15vh;
 }
 
 .menu-heading {
@@ -834,6 +834,7 @@ p {
   font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
   font-style: normal;
   text-decoration: none;
+  padding: 17px;
 }
 
 .menu-wrapper {
@@ -849,10 +850,18 @@ p {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  margin-bottom: 1.5em;
+  justify-content: center;
 }
 
 .menu-page-selector {
   font-size: calc(0 * 0.012 * min(100vh, 900px) + 1rem) !important;
+  cursor: pointer;
+}
+
+.selector-is-active {
+  text-decoration: underline;
+  cursor: default;
 }
 
 .menu-section-title {

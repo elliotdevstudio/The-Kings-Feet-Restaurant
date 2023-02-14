@@ -11,6 +11,8 @@
     data-image-dimensions="1202x1202" data-image-focal-point="0.5,0.5" alt="Screen Shot 2021-06-05 at 4.41.00 PM.png" data-load="false" style="height: 314px; width: 100%; object-position: 50% 50%; object-fit: cover;" data-parent-ratio="1.0" class="" data-image-resolution="750w" src=""></img>
 */
 
+const { nodeName } = require("jquery");
+
     /*lightbox styling for focused image in gallery 
 
 const navMenuMobile = document.getElementById("navbar-burger");
@@ -34,11 +36,36 @@ navMenuModal.onclick = navMenuModal;
 const navbarBurger = document.getElementById('navbar-burger');
 const topBun = document.getElementById('top-bun');
 const bottomBun = document.getElementById('bottom-bun');
+const foodMenuSelector = document.getElementById("food-selector");
+const drinkMenuSelector = document.getElementById("drink-selector");
 
+// NAVBAR BURGER toggle
 navbarBurger.addEventListener('click', () => {
     topBun.classList.toggle('active');
     bottomBun.classList.toggle('active');
 });
+
+
+drinkMenuSelector.addEventListener('click', () => {
+    if (foodMenuSelector.classList.contains("selector-is-active")){
+        foodMenuSelector.classList.remove("selector-is-active");
+        drinkMenuSelector.classList.add("selector-is-active");    
+    }
+});
+
+foodMenuSelector.addEventListener('click', () => {
+    if (drinkMenuSelector.classList.contains("selector-is-active")){
+        drinkMenuSelector.classList.remove("selector-is-active");
+        foodMenuSelector.classList.add("selector-is-active");
+    }
+});
+    
+
+    
+
+// MENU PAGE SELECTOR --
+
+
 
 /* SHOW ON SCROLL */
 
