@@ -1,26 +1,49 @@
-/* extra small devices of 471px and below */
-@media (max-width: 471px) {
+@use '../abstracts/mixins';
+@use "../base/colors";
+@use "../base/font_styles";
+@use "../base/typography";
 
-}
-/* Small devices 767px and lower */
-@media (max-width: 767px) { 
-
-}
-/* Medium devices (768px and up) */
-@media (min-width: 768px) { 
-
+.page-gutter-wrapper {
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
-/* Large devices (desktops, 820px and up)*/
-@media (min-width: 820px) {
-
+.press-section-one {
+  box-sizing: border-box;
+  background-color: rgb(230, 230, 224);
+  height: min-content;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  margin-top: 15vh;
+  margin-bottom: 3em;
+  font-size: calc((1.5 - 1) * calc(.012 * min(100vh, 900px)) + 1.5rem);
+  line-height: 1.7;
+ 
 }
-
-/* Extra large devices (desktops, 992px and up)*/
-@media (min-width: 1200px) { 
-  /* display the full navbar and set the max width for this vw 
-      also look into image quality and display 
-          FOOTER should be vertically aligned until 820px
-
-  */
+.press-heading {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
+  padding: 17px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+.press-text {
+  @include breakpoint('medium'){
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.section-two-heading {
+  margin-top: 2em;
+}
+.section-two-wrapper {
+  margin-top: 2em;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }

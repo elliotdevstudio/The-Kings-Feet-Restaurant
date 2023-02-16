@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/grx8rwo.css");
 @import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
 body {
   padding: 0px;
   margin: 0px;
@@ -760,18 +761,128 @@ h2.red-section-header-text {
   }
 }
 
-/* extra small devices of 471px and below */
-/* Small devices 767px and lower */
-/* Medium devices (768px and up) */
-/* Large devices (desktops, 820px and up)*/
-/* Extra large devices (desktops, 992px and up)*/
-@media (min-width: 1200px) {
-  /* display the full navbar and set the max width for this vw 
-      also look into image quality and display 
-          FOOTER should be vertically aligned until 820px
-
-  */
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
 }
+
+.menu-link {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+}
+
+h3 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+  margin: 0;
+}
+
+p {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(1.44vw + 0.4rem);
+}
+
+.product-text {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+@media (min-width: 472px) {
+  .product-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.menu-page-selector {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(1.44vw + 0.4rem);
+}
+
+.main-heading {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(0.036 * min(100vh, 900px) + 1rem);
+  padding: 17px;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
+.page-gutter-wrapper {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.press-section-one {
+  box-sizing: border-box;
+  background-color: rgb(230, 230, 224);
+  height: min-content;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  margin-top: 15vh;
+  margin-bottom: 3em;
+  font-size: calc(0.5 * 0.012 * min(100vh, 900px) + 1.5rem);
+  line-height: 1.7;
+}
+
+.press-heading {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(0.036 * min(100vh, 900px) + 1rem);
+  padding: 17px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .press-text {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.section-two-heading {
+  margin-top: 2em;
+}
+
+.section-two-wrapper {
+  margin-top: 2em;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
 body {
   padding: 0px;
   margin: 0px;
