@@ -7,7 +7,7 @@ body {
   font-size: 18px;
 }
 
-h1 {
+.menu-link {
   font-family: Blackriver-bold;
   font-weight: 400;
   font-style: normal;
@@ -57,6 +57,17 @@ p {
   font-weight: 200;
   font-style: normal;
   font-size: calc(1.44vw + 0.4rem);
+}
+
+.main-heading {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(0.036 * min(100vh, 900px) + 1rem);
+  padding: 17px;
+  margin: 2rem auto 0 auto;
+  text-align: center;
 }
 
 @font-face {
@@ -317,6 +328,13 @@ footer {
   box-sizing: border-box;
   width: 50px;
   gap: 15px;
+}
+
+.full-width-page-wrapper {
+  margin-top: 15vh;
+  padding-top: 2rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
 .navbar {
@@ -761,7 +779,7 @@ body {
   font-size: 18px;
 }
 
-h1 {
+.menu-link {
   font-family: Blackriver-bold;
   font-weight: 400;
   font-style: normal;
@@ -813,6 +831,17 @@ p {
   font-size: calc(1.44vw + 0.4rem);
 }
 
+.main-heading {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(0.036 * min(100vh, 900px) + 1rem);
+  padding: 17px;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
 @font-face {
   font-family: Blackriver;
   src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
@@ -828,15 +857,6 @@ p {
   margin-top: 15vh;
 }
 
-.menu-heading {
-  font-family: Blackriver-bold;
-  font-weight: 400;
-  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
-  font-style: normal;
-  text-decoration: none;
-  padding: 17px;
-}
-
 .menu-wrapper {
   display: flex;
   flex-direction: column;
@@ -846,11 +866,18 @@ p {
   height: min-content;
 }
 
+.hide {
+  display: none;
+}
+
+.menu-section {
+  margin-bottom: 3em;
+}
+
 .menu-selector-wrapper {
   display: flex;
   flex-direction: row;
   gap: 15px;
-  margin-bottom: 1.5em;
   justify-content: center;
 }
 
@@ -867,8 +894,7 @@ p {
 .menu-section-title {
   font-size: calc(1.2 * 0.012 * min(100vh, 900px) + 1rem) !important;
   font-weight: 300;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
 }
 
 .item-title {
@@ -879,6 +905,7 @@ p {
   letter-spacing: 0em;
   text-transform: none;
   line-height: 1.4em;
+  margin-top: 2em;
 }
 
 .item-description {
@@ -891,7 +918,57 @@ p {
   line-height: 1.7em;
 }
 
+.section-notes {
+  margin-top: 0;
+  margin-bottom: 3em;
+}
+
 /* min 768 
  menu item  */
+.patio-image-container {
+  box-sizing: content-box;
+  width: auto;
+  object-fit: fill;
+  overflow: none;
+  margin-bottom: 2em;
+}
+
+.patio-image {
+  max-width: 100%;
+  height: auto;
+  overflow: none;
+}
+
+.reservation-page-description {
+  text-align: center;
+  width: 100%;
+  height: min-content;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+@media (min-width: 768px) {
+  .reservation-page-description {
+    width: 60vw;
+  }
+}
+
+.spacer {
+  height: 17px;
+  width: 100%;
+  clear: both;
+}
+
+.horizontal-rule {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  height: 1px;
+  background-color: black;
+  width: 100%;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -31,13 +31,10 @@ navMenuModal.onclick = navMenuModal;
 */
 
 
-const navbarBurger = document.getElementById('navbar-burger');
-const topBun = document.getElementById('top-bun');
-const bottomBun = document.getElementById('bottom-bun');
-const foodMenuSelector = document.getElementById("food-selector");
-const drinkMenuSelector = document.getElementById("drink-selector");
-const foodMenu = document.getElementById("food-menu");
-const drinkMenu = document.getElementById("drink-menu");
+const navbarBurger = document.getElementById("navbar-burger");
+const topBun = document.getElementById("top-bun");
+const bottomBun = document.getElementById("bottom-bun");
+
 // NAVBAR BURGER toggle
 navbarBurger.addEventListener('click', () => {
     topBun.classList.toggle('active');
@@ -45,23 +42,6 @@ navbarBurger.addEventListener('click', () => {
 });
 
 
-drinkMenuSelector.addEventListener('click', () => {
-    if (foodMenuSelector.classList.contains("selector-is-active")){
-        foodMenuSelector.classList.remove("selector-is-active");
-        drinkMenuSelector.classList.add("selector-is-active");
-    }
-});
-foodMenuSelector.addEventListener('click', () => {
-    if (drinkMenuSelector.classList.contains("selector-is-active")){
-        drinkMenuSelector.classList.remove("selector-is-active");
-        foodMenuSelector.classList.add("selector-is-active");
-    }
-});
-    
-
-    
-
-// MENU PAGE SELECTOR --
 
 
 
@@ -82,6 +62,7 @@ function loop() {
     });
     scroll(loop);
 }
+
 loop();
 
 function isElementInViewport(el){

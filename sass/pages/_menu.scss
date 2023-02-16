@@ -13,14 +13,7 @@
   margin-top: 15vh;
 }
 
-.menu-heading {
-  font-family: Blackriver-bold;
-  font-weight: 400;
-  font-size: calc((4 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
-  font-style: normal;
-  text-decoration: none;
-  padding: 17px;
-}
+
 .menu-wrapper{
   display: flex;
   flex-direction: column;
@@ -30,12 +23,18 @@
   height: min-content;
 }
 
+.hide {
+  display: none;
+}
+
+.menu-section {
+  margin-bottom: 3em;
+}
 
 .menu-selector-wrapper {
   display: flex;
   flex-direction: row;
   gap: 15px;
-  margin-bottom: 1.5em;
   justify-content: center;
 }
 .menu-page-selector {
@@ -50,9 +49,9 @@
 .menu-section-title {
   font-size: calc((2.2 - 1) * calc(.012 * min(100vh, 900px)) + 1rem) !important;
   font-weight: 300;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
 }
+
 .item-title {
   font-size: calc((1.6 - 1) * calc(.012 * min(100vh, 900px)) + 1rem) !important;
   font-family: Abel;
@@ -61,6 +60,7 @@
   letter-spacing: 0em;
   text-transform: none;
   line-height: 1.4em;
+  margin-top: 2em;
 }
 .item-description {
   font-family: source-code-pro, monospace;
@@ -70,6 +70,10 @@
   letter-spacing: 0em;
   text-transform: none;
   line-height: 1.7em;
+}
+.section-notes {
+  margin-top: 0;
+  margin-bottom: 3em;
 }
  
 // need mixins for breakpoints... 
