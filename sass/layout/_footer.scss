@@ -1,3 +1,5 @@
+@use "../abstracts/mixins";
+
 footer {
   min-height: 33vh; 
 }
@@ -10,45 +12,18 @@ footer {
   text-align: center;
   padding: 6vw;    
   margin-top: 20px;
-}
-
-
-
-
-
-/* extra small devices of 471px and below */
-@media (max-width: 471px) {
-
-}
-/* Small devices 767px and lower */
-@media (max-width: 767px) { 
-
-}
-/* Medium devices (768px and up) */
-@media (min-width: 768px) { 
-
-}
-
-/* Large devices (desktops, 820px and up)*/
-@media (min-width: 820px) {
-  .footer-content-wrapper {
-    display: flex;
+  clear: both;
+  @include breakpoint('med-lg'){
     flex-direction: row;
     align-self: center;
     justify-content: space-between;
     align-items: center;
     gap: 0;
     max-width: 1200px;
-
   }
-
 }
 
-/* Extra large devices (desktops, 992px and up)*/
-@media (min-width: 1200px) { 
-  /* display the full navbar and set the max width for this vw 
-      also look into image quality and display 
-          FOOTER should be vertically aligned until 820px
 
-  */
-}
+
+
+

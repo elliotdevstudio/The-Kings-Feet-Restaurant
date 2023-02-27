@@ -1,8 +1,11 @@
-@use "../abstracts/mixins";
+/* THIS PAGE WAS COPIED OVER TO SAVE WORK IN CASE OF 
+ANY IRREVECABLE EXPERIMENTATION ERRORS PRIOR TO MAKING A PROPER COMMIT
+
+/* @use "../abstracts/mixins";
 @use "../abstracts/transforms";
 @use "../base/colors";
 @use "../base/font_styles";
-@use "../base/typography";;
+@use "../base/typography";
 @use "../components/buttons";
 
 
@@ -12,7 +15,7 @@
   padding-right: 4vw;
   overflow: none;
 }
-/*
+
 .card-column-one {
   box-sizing: border-box;
   position: relative;
@@ -33,7 +36,7 @@
     width: 50%;
   }
 }
-*/
+
 .press-section-one {
   box-sizing: border-box;
   position: relative;
@@ -60,7 +63,6 @@
 .press-card {
   box-sizing: border-box;
   position: relative;
-  display: flex;
   flex-direction: row;
   width: 92vw;
   max-width: 1200px;
@@ -70,9 +72,9 @@
   margin-bottom: 3em;
   clear: both;
 }
-div.press-caption-card {
+article.press-caption-card {
   box-sizing: content-box;
-  position: relative;
+  position: absolute;
   width: 56%;
   top: 40px;
   height: min-content;
@@ -82,17 +84,13 @@ div.press-caption-card {
   z-index: 5;
   transition-property: opacity;
   will-change: transform, opacity;
-  clear: both;
   @include breakpoint('small'){
     top: 0px;
     width: 30%;
     padding: 1.5em;
   }
 }
-.press-caption-card:nth-last-of-type(odd){
-  margin-left: auto;
-  margin-right: 0;
-}
+
 
 .position-right{
    float: right;
@@ -108,7 +106,7 @@ div.press-caption-card {
   @include breakpoint('small'){
     float: left;
     left: 0px;
-  }
+}
 }
 .press-heading {
   font-family: Blackriver-bold;
@@ -126,7 +124,6 @@ div.press-caption-card {
   width: 90%;
   top: 0px;
   object-fit: contain;
-  transition-property: opacity;
   will-change: transform, opacity;
   clear: both;
   @include breakpoint('small'){
@@ -142,7 +139,6 @@ div.press-caption-card {
 div.press-card:last-of-type{
   margin-bottom: 2em;
 }
-
 .horizontal-rule {
   position: relative;
   flex-direction: row;
@@ -152,7 +148,8 @@ div.press-card:last-of-type{
   height: 1px;
   color: black;
   width: 100%;
+  
 }
 .extra-padding {
   padding-top: 20px;
-}
+} */
