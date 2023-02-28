@@ -1,0 +1,11 @@
+@use "../abstracts/mixins";
+@use "../abstracts/transforms";
+@use "../base/colors";
+@use "../base/font_styles";
+@use "../base/typography";;
+@use "../components/buttons";
+
+.online-ordering-main-page {
+  background-color: rgb(230, 230, 224);
+  height: 100vh;
+}

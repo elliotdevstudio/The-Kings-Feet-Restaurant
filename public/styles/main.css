@@ -1,6 +1,7 @@
 @import url("https://use.typekit.net/grx8rwo.css");
 @import url("https://use.typekit.net/grx8rwo.css");
 @import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
 body {
   padding: 0px;
   margin: 0px;
@@ -37,7 +38,7 @@ p {
   font-family: source-code-pro, monospace;
   font-weight: 200;
   font-style: normal;
-  font-size: calc(1.44vw + 0.4rem);
+  font-size: calc(0vw + 1rem);
 }
 
 .product-text {
@@ -216,9 +217,18 @@ a.red-section-button {
   font-weight: 500;
   letter-spacing: 0.02em;
   font-size: 1rem;
+  text-decoration: none;
   border: solid white 2px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  transition: all 0.5s ease-out;
+}
+
+a.red-section-button:hover {
+  background-color: white;
+  color: rgb(182, 32, 37);
 }
 
 .press-button {
@@ -241,6 +251,12 @@ a.red-section-button {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  transition: all 0.5s ease-out;
+}
+
+a.press-page-button:hover {
+  background-color: rgb(182, 32, 37);
+  color: white;
 }
 
 #navModal {
@@ -272,9 +288,17 @@ footer {
     flex-direction: row;
     align-self: center;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 0;
     max-width: 1200px;
+  }
+}
+
+@media (min-width: 820px) {
+  .footer-text {
+    margin: 0;
+    align-self: flex-start;
+    text-align: justify;
   }
 }
 
@@ -305,13 +329,13 @@ footer {
   margin: auto;
 }
 
-.block {
+.footer-content-spacing {
   padding: 0px;
 }
 @media (min-width: 768px) {
-  .block {
-    padding-left: 0px;
-    padding-right: 4vw;
+  .footer-content-spacing {
+    padding-left: 9px;
+    padding-right: 9px;
   }
 }
 
@@ -819,7 +843,7 @@ p {
   font-family: source-code-pro, monospace;
   font-weight: 200;
   font-style: normal;
-  font-size: calc(1.44vw + 0.4rem);
+  font-size: calc(0vw + 1rem);
 }
 
 .product-text {
@@ -880,9 +904,18 @@ a.red-section-button {
   font-weight: 500;
   letter-spacing: 0.02em;
   font-size: 1rem;
+  text-decoration: none;
   border: solid white 2px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  transition: all 0.5s ease-out;
+}
+
+a.red-section-button:hover {
+  background-color: white;
+  color: rgb(182, 32, 37);
 }
 
 .press-button {
@@ -905,6 +938,12 @@ a.red-section-button {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  transition: all 0.5s ease-out;
+}
+
+a.press-page-button:hover {
+  background-color: rgb(182, 32, 37);
+  color: white;
 }
 
 .page-gutter-wrapper {
@@ -1112,7 +1151,7 @@ p {
   font-family: source-code-pro, monospace;
   font-weight: 200;
   font-style: normal;
-  font-size: calc(1.44vw + 0.4rem);
+  font-size: calc(0vw + 1rem);
 }
 
 .product-text {
@@ -1273,6 +1312,167 @@ p {
   height: 1px;
   background-color: black;
   width: 100%;
+}
+
+.start-position-left {
+  transform: matrix(1, 0, 0, 1, -14, 0);
+}
+
+.start-position-right {
+  transform: matrix(1, 0, 0, 1, 14, 0);
+}
+
+.is-visible {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.menu-link {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+}
+
+h3 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+  margin: 0;
+}
+
+p {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(0vw + 1rem);
+}
+
+.product-text {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+@media (min-width: 472px) {
+  .product-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.menu-page-selector {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(1.44vw + 0.4rem);
+}
+
+.main-heading {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(0.036 * min(100vh, 900px) + 1rem);
+  padding: 17px;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
+.button-container {
+  display: flex;
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 158px;
+  /*
+  margin-top: 2.4em;
+  margin-bottom: 2.4em;
+  */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a.red-section-button {
+  padding: 1.2em 2.004em;
+  width: 100%;
+  align-self: center;
+  font-family: source-code-pro, monospace;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 1rem;
+  text-decoration: none;
+  border: solid white 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  transition: all 0.5s ease-out;
+}
+
+a.red-section-button:hover {
+  background-color: white;
+  color: rgb(182, 32, 37);
+}
+
+.press-button {
+  background-color: transparent;
+}
+
+.press-page-button {
+  text-align: center;
+  padding: 1.2em 2em;
+  width: 100%;
+  align-self: center;
+  font-family: source-code-pro, monospace;
+  color: rgb(182, 32, 37);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 1rem;
+  text-decoration: none;
+  border: solid rgb(182, 32, 37) 2px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.5s ease-out;
+}
+
+a.press-page-button:hover {
+  background-color: rgb(182, 32, 37);
+  color: white;
+}
+
+.online-ordering-main-page {
+  background-color: rgb(230, 230, 224);
+  height: 100vh;
 }
 
 /*# sourceMappingURL=main.css.map */

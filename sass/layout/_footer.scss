@@ -17,9 +17,17 @@ footer {
     flex-direction: row;
     align-self: center;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 0;
     max-width: 1200px;
+  }
+}
+.footer-text {
+  
+  @include breakpoint('med-lg'){
+    margin: 0; 
+    align-self: flex-start;
+    text-align: justify;
   }
 }
 

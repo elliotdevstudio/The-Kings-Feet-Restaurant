@@ -26,11 +26,11 @@
   margin: auto;
 }
 
-.block {
+.footer-content-spacing {
   padding: 0px;
   @include breakpoint('medium'){
-  padding-left: 0px;
-  padding-right: 4vw;
+  padding-left: 9px;
+  padding-right: 9px;
   }
 }
 
