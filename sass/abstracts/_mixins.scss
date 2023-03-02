@@ -1,9 +1,10 @@
 $breakpoints: (
   small: 472px,
+  sm-med: 515px,
   medium: 768px,
   med-lg: 820px,
   large: 992px,
-  wide: 1200px
+  wide: 1064px
 );
 
 @mixin breakpoint($name) {
