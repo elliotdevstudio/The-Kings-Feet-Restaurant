@@ -1,5 +1,8 @@
 @import '../abstracts/mixins';
 
+* {
+  box-sizing: border-box;
+}
 .block-content {
   display: flex;
   flex-direction: column;

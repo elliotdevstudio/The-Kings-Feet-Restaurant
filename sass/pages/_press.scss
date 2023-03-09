@@ -6,37 +6,15 @@
 @use "../components/buttons";
 
 
-.page-gutter-wrapper {
-  box-sizing: border-box;
-  padding-left: 4vw;
-  padding-right: 4vw;
+.card-section-wrapper {
+  height: min-content;
+  padding-left: 6vw;
+  padding-right: 6vw;
   overflow: none;
 }
-/*
-.card-column-one {
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  @include breakpoint('small'){
-    width: 50%;
-  }
-}
-.card-column-two {
-  display: flex;
-  box-sizing: border-box;
-  flex-direction: row;
-  position: relative;
-  width: 50%;
-  
-  overflow: none;
-  @include breakpoint('small'){
-    width: 50%;
-  }
-}
-*/
+
 .press-section-one {
   box-sizing: border-box;
-  position: relative;
   background-color: rgb(230, 230, 224);
   height: min-content;
   padding-top: 2em;
@@ -49,8 +27,8 @@
   line-height: 1.7;
 }
 .card-section {
-  position: relative;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  height: min-content;
   display: flex;
   flex-direction: column;
   gap: .5em;
@@ -58,58 +36,53 @@
   margin-bottom: 2em;
 }
 .press-card {
-  box-sizing: border-box;
+  box-sizing: content-box;
   position: relative;
   display: flex;
   flex-direction: row;
-  width: 92vw;
+  width: 88vw;
   max-width: 1200px;
   height: min-content;
   margin-top: 1em;
-  padding-bottom: 2em;
-  margin-bottom: 3em;
-  clear: both;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  overflow: none;
 }
-div.press-caption-card {
-  box-sizing: content-box;
+.press-card::before {
+  content: '';
+  display: block;
+}
+
+.press-caption-card {
   position: relative;
-  width: 56%;
-  top: 40px;
-  height: min-content;
+  width: 60%;
+  top: 50px;
+  height: auto;
   background-color: rgb(230, 230, 224);
   padding: 28px;
   margin-bottom: 1em;
   z-index: 5;
+  opacity: 0;
   transition-property: opacity;
   will-change: transform, opacity;
-  clear: both;
+
   @include breakpoint('small'){
     top: 0px;
-    width: 30%;
+    width: 40%;
     padding: 1.5em;
   }
 }
-.press-caption-card:nth-last-of-type(odd){
+
+
+.on-right{
   margin-left: auto;
-  margin-right: 0;
+  right: 0;
+}
+.on-left{
+  margin-right: auto;
+  left: 0;
 }
 
-.position-right{
-   float: right;
-   right: 0px;
-  @include breakpoint('small'){
-    float: right;
-    right: 0px;
-  }
-}
-.position-left{
-  float: left;
-  left: 0px;
-  @include breakpoint('small'){
-    float: left;
-    left: 0px;
-  }
-}
 .press-heading {
   font-family: Blackriver-bold;
   font-weight: 400;
@@ -126,9 +99,10 @@ div.press-caption-card {
   width: 90%;
   top: 0px;
   object-fit: contain;
+  opacity: 0;
   transition-property: opacity;
   will-change: transform, opacity;
-  clear: both;
+  z-index: 2;
   @include breakpoint('small'){
     width: 64%;
   }
