@@ -704,9 +704,10 @@ p {
 }
 
 .gallery-item {
+  position: relative;
   width: 100%;
   height: auto;
-  background-color: green;
+  border: 1px solid green;
   box-sizing: content-box;
   object-fit: contain;
   cursor: pointer;
@@ -719,10 +720,9 @@ p {
 }
 
 .gallery-image {
-  background-color: red;
-  height: 100%;
-  width: auto;
-  position: 50% 50%;
+  height: auto;
+  width: 100%;
+  border: 1px solid red;
 }
 
 @media (min-width: 464px) {
