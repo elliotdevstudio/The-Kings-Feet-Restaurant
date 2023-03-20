@@ -2,7 +2,7 @@
 @use "../abstracts/transforms";
 @use "../base/colors";
 @use "../base/font_styles";
-@use "../base/typography";;
+@use "../base/typography";
 @use "../components/buttons";
 
 
@@ -110,7 +110,6 @@
 .press-image {
   height: auto;
   width: 100%;
-  object-fit: contain;
 }
 
 div.press-card:last-of-type{

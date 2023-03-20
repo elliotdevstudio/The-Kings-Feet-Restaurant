@@ -1,13 +1,381 @@
-.gallery-lightbox-background {
-  background-color: #fff;
-  opacity: .9;
+@use "../abstracts/mixins";
+@use "../abstracts/transforms";
+@use "../base/colors";
+@use "../base/font_styles";
+@use "../base/typography";
+
+
+// .gallery-lightbox-background {
+//   background-color: #fff;
+//   opacity: .9;
+// }
+.gallery-container {
+  position: relative;
+  margin-top: 15.5vh;
+  margin-bottom: 1em;
+  width: 100vw;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(11, auto);
+  grid-row-gap: 1vw;
+  grid-column-gap: 1vw;
+
+// ** maybe change the fixed heights to percentages ** 
+
+  @include breakpoint('xtr-small'){
+    grid-template-columns: [line-1] 49% [line-2] 4% [line-3] 44% [line-4];
+    grid-template-rows: repeat(9,auto);
+  }
+  @include breakpoint('sm-med'){
+    grid-template-columns: [line-1] 33% [line-2] 10% [line-3] 4%[line-4] 16% [line-5] 34% [line-6];
+    grid-template-rows: repeat(5,auto);
+  }
+  @include breakpoint('medium'){
+    grid-template-columns: [line-1] 35% [line-2] 12% [line-3] 20% [line-4] 31% [line-5];
+    grid-template-rows: repeat(5,auto);
+  }
+  @include breakpoint('med-lg'){
+    grid-template-columns: [line-1] 32% [line-2] 1% [line-3] 14% [line-4] 16% [line-5] 1% [line-6] 32% [line-7];
+    grid-template-rows: repeat(4,auto);
+  }
+  @include breakpoint('wide'){
+    grid-template-columns: [line-1] 26% [line-2] 7% [line-3] 19% [line-4] 14% [line-5] 8% [line-6] 26% [line-7];
+    grid-template-rows: repeat(3,auto);
+  }
+  @include breakpoint('xtr-wide'){
+    grid-template-columns: [line-1] 26% [line-2] 1% [line-3] 5% [line-4] 20% [line-5] 2% [line-6] 13% [line-7] 7% [line-8] 1% [line-9] 25% [line-10];
+    grid-template-rows: repeat(3,auto);
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
+.gallery-item {
+  width: 100%;
+  height: auto;
+  background-color: green;
+  box-sizing: content-box;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.gallery-item::after {
+  content:"";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.gallery-image {
+  background-color: red;
+  height: 100%;
+  width: auto;
+  position: 50% 50%;
+}
+
+.one {
+  @include breakpoint('xtr-small'){
+    grid-column-start: line-1;
+    grid-column-end: line-4;
+    
+  }
+  @include breakpoint('sm-med'){
+    grid-column-start: line-1;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('medium'){
+    grid-column-start: line-1;
+    grid-column-end: line-2;
+  }
+  @include breakpoint('med-lg'){
+    grid-column-start: line-1;
+    grid-column-end: line-3;
+  }
+  @include breakpoint('wide'){
+    grid-column-start: line-1;
+    grid-column-end: line-2;
+  }
+  @include breakpoint('xtr-wide'){
+    grid-column-start: line-1;
+    grid-column-end: line-3;
+  }
+}
+.two {
+  @include breakpoint('xtr-small'){
+    grid-column-start: line-1;
+    grid-column-end: line-3;
+  }
+  @include breakpoint('sm-med'){
+    grid-column-start: line-4;
+    grid-column-end: line-6;
+  }
+  @include breakpoint('medium'){
+    grid-column-start: line-2;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('med-lg'){
+    grid-column-start: line-3;
+    grid-column-end: line-6;
+  }
+  @include breakpoint('wide'){
+    grid-column-start: line-2;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('xtr-wide'){
+    grid-column-start: line-3;
+    grid-column-end: line-6;
+  }
+}
+.three {
+  @include breakpoint('xtr-small'){
+    grid-column-start: line-3;
+    grid-column-end: line-4;
+   
+  }
+  @include breakpoint('sm-med'){
+    grid-column-start: line-1;
+    grid-column-end: line-3;
+  }
+  @include breakpoint('medium'){
+    grid-column-start: line-4;
+    grid-column-end: line-5;
+  }
+  @include breakpoint('med-lg'){
+    grid-column-start: line-6;
+    grid-column-end: line-7;
+  }
+  @include breakpoint('wide'){
+    grid-column-start: line-4;
+    grid-column-end: line-6;
+  }
+  @include breakpoint('xtr-wide'){
+    grid-column-start: line-6;
+    grid-column-end: line-8;
+  }
+}
+.four {
+  @include breakpoint('xtr-small'){
+    grid-column-start: line-1;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('sm-med'){
+    grid-column-start: line-3;
+    grid-column-end: line-6;
+  }
+  @include breakpoint('medium'){
+    grid-column-start: line-1;
+    grid-column-end: line-3;
+  }
+  @include breakpoint('med-lg'){
+    grid-column-start: line-1;
+    grid-column-end: line-2;
+  }
+  @include breakpoint('wide'){
+    grid-column-start: line-6;
+    grid-column-end: line-7;
+  }
+  @include breakpoint('xtr-wide'){
+    grid-column-start: line-8;
+    grid-column-end: line-10;
+  }
+}
+.five {
+  @include breakpoint('xtr-small'){
+    grid-column-start: line-1;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('sm-med'){
+    grid-column-start: line-1;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('medium'){
+    grid-column-start: line-3;
+    grid-column-end: line-5;
+  }
+  @include breakpoint('med-lg'){
+    grid-column-start: line-2;
+    grid-column-end: line-5;
+  }
+  @include breakpoint('wide'){
+    grid-column-start: line-1;
+    grid-column-end: line-3;
+  }
+  @include breakpoint('xtr-wide'){
+    grid-column-start: line-1;
+    grid-column-end: line-2;
+  }
+}
+.six {
+  @include breakpoint('xtr-small'){
+    grid-column-start: line-1;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('sm-med'){
+    grid-column-start: line-4;
+    grid-column-end: line-6;
+  }
+  @include breakpoint('medium'){
+    grid-column-start: line-1;
+    grid-column-end: line-3;
+  }
+  @include breakpoint('med-lg'){
+    grid-column-start: line-5;
+    grid-column-end: line-7;
+  }
+  @include breakpoint('wide'){
+    grid-column-start: line-3;
+    grid-column-end: line-5;
+  }
+  @include breakpoint('xtr-wide'){
+    grid-column-start: line-2;
+    grid-column-end: line-5;
+  }
+}
+.seven {
+  @include breakpoint('xtr-small'){
+    grid-column-start: line-1;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('sm-med'){
+    grid-column-start: line-1;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('medium'){
+    grid-column-start: line-3;
+    grid-column-end: line-5;
+  }
+  @include breakpoint('med-lg'){
+    grid-column-start: line-1;
+    grid-column-end: line-3;
+  }
+  @include breakpoint('wide'){
+    grid-column-start: line-5;
+    grid-column-end: line-7;
+  }
+  @include breakpoint('xtr-wide'){
+    grid-column-start: line-5;
+    grid-column-end: line-9;
+  }
+}
+.eight {
+  @include breakpoint('xtr-small'){
+    grid-column-start: line-1;
+    grid-column-end: line-2;
+  }
+  @include breakpoint('sm-med'){
+    grid-column-start: line-4;
+    grid-column-end: line-6;
+  }
+  @include breakpoint('medium'){
+    grid-column-start: line-1;
+    grid-column-end: line-3;
+  }
+  @include breakpoint('med-lg'){
+    grid-column-start: line-3;
+    grid-column-end: line-6;
+  }
+  @include breakpoint('wide'){
+    grid-column-start: line-1;
+    grid-column-end: line-2;
+  }
+  @include breakpoint('xtr-wide'){
+    grid-column-start: line-9;
+    grid-column-end: line-10;
+  }
+}
+.nine {
+  @include breakpoint('xtr-small'){
+    grid-column-start: line-2;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('sm-med'){
+    grid-column-start: line-1;
+    grid-column-end: line-2;
+  }
+  @include breakpoint('medium'){
+    grid-column-start: line-3;
+    grid-column-end: line-5;
+  }
+  @include breakpoint('med-lg'){
+    grid-column-start: line-6;
+    grid-column-end: line-7;
+  }
+  @include breakpoint('wide'){
+    grid-column-start: line-2;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('xtr-wide'){
+    grid-column-start: line-1;
+    grid-column-end: line-4;
+  }
+}
+.ten {
+  @include breakpoint('xtr-small'){
+    grid-column-start: line-1;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('sm-med'){
+    grid-column-start: line-2;
+    grid-column-end: line-5;
+  }
+  @include breakpoint('medium'){
+    grid-column-start: line-1;
+    grid-column-end: line-3;
+  }
+  @include breakpoint('med-lg'){
+    grid-column-start: line-1;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('wide'){
+    grid-column-start: line-4;
+    grid-column-end: line-6;
+  }
+  @include breakpoint('xtr-wide'){
+    grid-column-start: line-4;
+    grid-column-end: line-7;
+  }
+}
+.eleven{
+  @include breakpoint('xtr-small'){
+    grid-column-start: line-1;
+    grid-column-end: line-4;
+  }
+  @include breakpoint('sm-med'){
+    grid-column-start: line-5;
+    grid-column-end: line-6;
+  }
+  @include breakpoint('medium'){
+    grid-column-start: line-3;
+    grid-column-end: line-5;
+  }
+  @include breakpoint('med-lg'){
+    grid-column-start: line-4;
+    grid-column-end: line-7;
+  }
+  @include breakpoint('wide'){
+    grid-column-start: line-6;
+    grid-column-end: line-7;
+  }
+  @include breakpoint('xtr-wide'){
+    grid-column-start: line-7;
+    grid-column-end: line-10;
+  }
+}
+
+.gallery-lightbox {
+  position: fixed;
+  flex-direction: column;
+  box-sizing: border-box;
+  user-select: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  padding: calc(3vw + 20px) 3vw;
+}
 .gallery-lightbox-close-btn {
   color: #2a2829;
-}
-
-.gallery-lightbox-close-btn {
   border-radius: 0.15em;
   box-sizing: border-box;
   pointer-events: auto;
@@ -28,16 +396,4 @@
   padding: 1.5vw 1.5vw 0;
 }
 
-.gallery-lightbox {
-  position: fixed;
-  flex-direction: column;
-  box-sizing: border-box;
-  user-select: none;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 9999;
-  padding: calc(3vw + 20px) 3vw;
-}
 
