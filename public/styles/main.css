@@ -661,8 +661,8 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(11, auto);
-  grid-row-gap: 1vw;
-  grid-column-gap: 1vw;
+  grid-gap: 1vw;
+  overflow: hidden;
 }
 @media (min-width: 464px) {
   .gallery-container {
@@ -706,23 +706,25 @@ p {
 .gallery-item {
   position: relative;
   width: 100%;
-  height: auto;
-  border: 1px solid green;
+  height: 100%;
   box-sizing: content-box;
-  object-fit: contain;
+  object-fit: cover;
+  overflow: hidden;
+  margin-top: 4px;
   cursor: pointer;
 }
 
 .gallery-item::after {
   content: "";
-  display: block;
   padding-bottom: 100%;
 }
 
 .gallery-image {
-  height: auto;
+  display: flex;
   width: 100%;
-  border: 1px solid red;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 @media (min-width: 464px) {
@@ -1031,6 +1033,7 @@ p {
   .nine {
     grid-column-start: line-1;
     grid-column-end: line-2;
+    aspect-ratio: 1/1;
   }
 }
 @media (min-width: 768px) {
@@ -1068,6 +1071,7 @@ p {
   .ten {
     grid-column-start: line-2;
     grid-column-end: line-5;
+    aspect-ratio: 1/1;
   }
 }
 @media (min-width: 768px) {
@@ -1105,6 +1109,7 @@ p {
   .eleven {
     grid-column-start: line-5;
     grid-column-end: line-6;
+    aspect-ratio: 1/1;
   }
 }
 @media (min-width: 768px) {

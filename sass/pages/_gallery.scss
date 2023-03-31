@@ -18,22 +18,22 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(11, auto);
-  grid-row-gap: 1vw;
-  grid-column-gap: 1vw;
+  grid-gap: 1vw;
+  overflow: hidden;
 
 // ** maybe change the fixed heights to percentages ** 
 
   @include breakpoint('xtr-small'){
     grid-template-columns: [line-1] 49% [line-2] 4% [line-3] 44% [line-4];
-    grid-template-rows: repeat(9,auto);
+    grid-template-rows: repeat(9, auto);
   }
   @include breakpoint('sm-med'){
     grid-template-columns: [line-1] 33% [line-2] 10% [line-3] 4%[line-4] 16% [line-5] 34% [line-6];
-    grid-template-rows: repeat(5,auto);
+    grid-template-rows: repeat(5, auto);
   }
   @include breakpoint('medium'){
     grid-template-columns: [line-1] 35% [line-2] 12% [line-3] 20% [line-4] 31% [line-5];
-    grid-template-rows: repeat(5,auto);
+    grid-template-rows: repeat(5, auto);
   }
   @include breakpoint('med-lg'){
     grid-template-columns: [line-1] 32% [line-2] 1% [line-3] 14% [line-4] 16% [line-5] 1% [line-6] 32% [line-7];
@@ -54,31 +54,33 @@
 .gallery-item {
   position: relative;
   width: 100%;
-  height: auto;
-  border: 1px solid green;
+  height: 100%;
   box-sizing: content-box;
-  object-fit: contain;
+  object-fit: cover;
+  overflow: hidden;
+  margin-top: 4px;
   cursor: pointer;
+
 }
 
 .gallery-item::after {
   content:'';
-  display: block;
   padding-bottom: 100%;
 }
 
 .gallery-image {
-  height: auto;
-  width: 100%;
-  border: 1px solid red;
+  display: flex;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  
 }
 
 .one {
- 
   @include breakpoint('xtr-small'){
     grid-column-start: line-1;
     grid-column-end: line-4;
-    
   }
   @include breakpoint('sm-med'){
     grid-column-start: line-1;
@@ -292,6 +294,7 @@
   @include breakpoint('sm-med'){
     grid-column-start: line-1;
     grid-column-end: line-2;
+    aspect-ratio: 1 / 1;
   }
   @include breakpoint('medium'){
     grid-column-start: line-3;
@@ -318,6 +321,7 @@
   @include breakpoint('sm-med'){
     grid-column-start: line-2;
     grid-column-end: line-5;
+    aspect-ratio: 1 / 1;
   }
   @include breakpoint('medium'){
     grid-column-start: line-1;
@@ -344,6 +348,7 @@
   @include breakpoint('sm-med'){
     grid-column-start: line-5;
     grid-column-end: line-6;
+    aspect-ratio: 1 / 1;
   }
   @include breakpoint('medium'){
     grid-column-start: line-3;
