@@ -1,3 +1,9 @@
+
+@use "../abstracts/mixins";
+@use "../base/colors";
+@use "../base/font_styles";
+@use "../base/typography";
+
 .navbar {
   position: absolute;
   top: 0;
@@ -12,12 +18,12 @@
   pointer-events: auto;
   background-color: white;
   overflow: none;
-  
 }
 
 .navbar-wrapper {
   position: relative;
   width: 92vw;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,18 +38,20 @@
 }
 
 .nav-items-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: left;
-  justify-self: flex-end;
-  margin-right: 10px;
+  display: none;
+  @include breakpoint('medium'){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    justify-self: flex-end;
+    margin-right: 10px;
+  }
   
 }
 .icons-wrapper {
   padding:10px;
 }
-
 
 .header-logo-container {
   box-sizing: content-box;
@@ -62,7 +70,6 @@
   overflow: none;
 }
 
-
 .header-nav-item {
   padding: 10px;
   text-align: left;
@@ -75,37 +82,42 @@ a.navlink {
   color: hsl(329.9999999999999, 2.4390243902439024%, 16.07843137254902%);
   text-decoration: none;
 }
-
-
-
-/* THIS SECTION NEEDS TO BE REFACTORED AND ACCOUNT FOR A MIN VALUE BREAKPOINT
-/* INSTEAD OF THE MAX 
-
-/* Small devices 767px and lower */
-@media (max-width: 767px) { 
-  .navbar-wrapper {
-    box-sizing: border-box;
-    max-height: 86px;
-    width: 86vw;
-   
+.nav-modal {
+  position: absolute;
+  background-color: white;
+  margin-top: 15vh;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  z-index: 10;
 }
-.header-logo-container {  
-    display: flex;
-    max-height: 86px;
-    width: auto;
-    object-fit: contain;
+.modal-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.modal-nav-item {
+  transition: opacity 250ms cubic-bezier(.4,0,.2,1);
+}
+.modal-icons-container {
+  justify-self: flex-end;
 }
 .header-content-div {
-    padding-top: 6vw;
-    padding-right: 6vw;
-    padding-bottom: 6vw;
-    padding-left: 6vw;
+  padding-top: 6vw;
+  padding-right: 6vw;
+  padding-bottom: 6vw;
+  padding-left: 6vw;
+    @include breakpoint('medium'){
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      box-sizing: border-box;
+      padding-top: 2.5vw;
+      padding-bottom: 2.5vw;
+      padding-left: 4vw;
+      padding-right: 4vw;
+    }
 }
-
-.nav-items-wrapper {
-    display: none;
-}
-
 .navbar-burger {
     position: relative;
     box-sizing: border-box;
@@ -118,12 +130,14 @@ a.navlink {
     height: 35px;
     cursor: pointer;
     background-color: white;
+  @include breakpoint('medium'){
+    display: none;
+  }
+  
 }
 .navbar-burger.active {
-    background-color: red;
     transform: translatex(-3.5px) rotate(-135deg);
 }
-
 .top-bun {
     display: block;
     content: '';
@@ -140,6 +154,7 @@ a.navlink {
 .top-bun.active {
     transform: translatex(3.5px) translateY(5px) rotate(-135deg);
     width: 28px;
+  
 }
 .patty {
     display: block;
@@ -165,45 +180,4 @@ a.navlink {
 .bottom-bun.active {
     transform: translatex(3.5px) translateY(-6px) rotate(135deg);
     width: 28px;
-}
-}
-/* Medium devices (768px and up) */
-@media (min-width: 768px) { 
-  .header-content-div { 
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    box-sizing: border-box;
-    padding-top: 2.5vw;
-    padding-bottom: 2.5vw;
-    padding-left: 4vw;
-    padding-right: 4vw;
-  }
-
-  .navbar-burger {
-    display: none;
-  }
-  .nav-items-wrapper {
-    text-align: left;
-
-  } 
-}
-/* Large devices (desktops, 820px and up)*/
-@media (min-width: 820px) {
-}
-
-/* Extra large devices (desktops, 992px and up)*/
-@media (min-width: 1200px) { 
-  .header {
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    line-height: 1;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    }   
-  /* display the full navbar and set the max width for this viewport width
-          FOOTER should be vertically aligned until 820px
-  */
 }
