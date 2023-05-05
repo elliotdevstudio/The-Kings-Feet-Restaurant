@@ -1,6 +1,11 @@
-@import '../abstracts/mixins';
+@use "../abstracts/mixins";
+@use "../layout/main-content-layout";
+@use "../base/font_styles";
+@use "../base/typography";
 
-
+.nav-homepage {
+  z-index: 10;
+}
 .homepage-menu {
   display: flex;
   justify-content: center;

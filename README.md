@@ -1,11 +1,11 @@
-This website was formerly used for a restaurant called 'The King's Feet', located in Berkeley, CA, and this current version is a rebuild from scratch that is intended to serve as a front-end example of my work, done manually with HTML5, SASS, and javascript.
+This website is built from scratch and was formerly used for my restaurant called 'The King's Feet', located in Berkeley, CA. This is intended to serve as a front-end example of my work, using HTML5, SASS, and javascript.
 
 CURRENT STATE OF THE PAGE, AND CHALLENGES 
 
-So far I've concentrated on getting the homepage fully completed to establish responsiveness and some of the layout patterns, and have pulled in a 7-1 approach to organizing SASS files before moving on to the next pages. While things seem to be working well with this arrangment, the main issue that I plan to address later is to assign breakpoint mixins. 
+This website is now completed as a working example for my frontend skills using a variety of tools and strategies, driven primarily by using a Sass file organization pattern for more efficiency. In place of conventional media queries, I used Sass mixins for site responsiveness and mobile first development. I also used grid and flex depending on the needs of the layout, there is built in user interactivity as well as some automatic scroll animations with javascript, and with mindful design assistance from my professional partner, Nicole Wang Studio. 
 
 WINS 
 
-This has been a great learning experience in better understanding how to work with images, animations, and various layout tools and strategies. Most significantly, the exposure to challenges presented by achieving very nuanced bahavior through media queries, and working out any unintended side-effects, has ehanced my front-end problem solving. I'm looking forward to setting up the gallery page, since that will be one of the most tricky to build! 
+This has been a great learning experience in better understanding how to work with images, animations, and various layout tools and strategies at a greater depth. As with most projects, there are always going to be bugs and snags that arise. I encountered numerous unintended or unwanted side effects at just about every stage. They were oftentimes very nuanced, and despite my knowledge I had to think critically about every possible reason why something wasn't working properly, such as the order of operations in an event listener, the implications of relative versus absolute positioning and the implications of z-index hierarchy (as well as how that can affect a transistion effect like opacity), etc. These were all great problems to work through and figure out that will help me immensely in my upcoming projects that I'm excited to share. 
 
 Thank you for checking out my work-- I'll push more updates as soon as I can!

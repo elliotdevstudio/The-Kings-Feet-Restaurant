@@ -3,6 +3,13 @@
 * {
   box-sizing: border-box;
 }
+#main-site-container {
+  display: block;
+}
+#main-site-container.hide-overflow {
+  display: none;
+}
+
 .block-content {
   display: flex;
   flex-direction: column;
@@ -51,15 +58,20 @@
   }
 }
 .icons-wrapper {
+  box-sizing: content-box;
+  width: fit-content;
   display: flex;
   flex-direction: row;
-  justify-self: center;
-  box-sizing: border-box;
-  width: 50px;
   gap: 15px;
-  
+  margin-top: 0;
+  margin-bottom: 2em;
 }
-
+.ig-icon-wrapper {
+  justify-self: flex-start;
+}
+.yelp-icon-wrapper {
+  justify-self: flex-end;
+}
 .full-width-page-wrapper {
   margin-top: 15vh;
   padding-top: 2rem;

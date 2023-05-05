@@ -1,19 +1,12 @@
 .start-position-left {
   transform: matrix(1,0,0,1,-14,0);
 }
-
 .start-position-right {
   transform: matrix(1,0,0,1,14,0);
 }
-
 .is-visible {
+  opacity: 1;
   transform: matrix(1,0,0,1,0,0);
   transition: opacity 800ms cubic-bezier(.4,0,.2,1), transform 800ms cubic-bezier(.4,0,.2,1);
-  opacity: 1;
 }
 
-// This intended effect for opacity to fade into visibility does not work with the above transistion alone, yet works perfectly fine for the homepage images and descriptions when this redundantly added class sets it to a value of '1'. To the best of my knowledge this would not seem to be a good practice, but I've yet to find the answer for how to more properly handle this css animation. As it stands, javascript is adding this class when the element is within the viewport window-- please see: 'scripts/app.js'. 
-
-// .is-visible {
-//   opacity: 1;
-// }

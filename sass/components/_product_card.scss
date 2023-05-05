@@ -1,5 +1,6 @@
 @use "../abstracts/mixins";
 @use "../abstracts/transforms";
+@use "../base/font_styles";
 
 .product-card-wrapper.odd {
   display: flex;
@@ -74,6 +75,7 @@ h3.product-card-heading {
   opacity: 0;
   transition-property: opacity;
   will-change: transform, opacity;
+  font-family: source-code-pro;
   @include breakpoint('small'){
     display:flex;
     flex-direction: column;

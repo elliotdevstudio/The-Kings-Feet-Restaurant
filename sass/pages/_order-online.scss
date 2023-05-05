@@ -4,8 +4,12 @@
 @use "../base/font_styles";
 @use "../base/typography";;
 @use "../components/buttons";
+@use "../layout/main-content-layout";
 
 .online-ordering-main-page {
   background-color: rgb(230, 230, 224);
   height: 100vh;
 }
+
+// Page build on hold because this site is meant to be static
+// and intended for demonstrating more Sass, CSS, UX, etc. 

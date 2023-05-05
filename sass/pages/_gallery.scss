@@ -3,12 +3,13 @@
 @use "../base/colors";
 @use "../base/font_styles";
 @use "../base/typography";
-
+@use "../layout/main-content-layout";
 
 // .gallery-lightbox-background {
 //   background-color: #fff;
 //   opacity: .9;
 // }
+
 .gallery-container {
   position: relative;
   margin-top: 15.5vh;
@@ -50,6 +51,7 @@
     margin-right: auto;
   }
 }
+
 
 .gallery-item {
   position: relative;
@@ -369,6 +371,7 @@
 }
 
 .gallery-lightbox {
+  display: none;
   position: fixed;
   flex-direction: column;
   box-sizing: border-box;
@@ -379,6 +382,8 @@
   left: 0;
   z-index: 9999;
   padding: calc(3vw + 20px) 3vw;
+  background-color: hsl(0deg 0% 100%);
+  opacity: .9;
 }
 .gallery-lightbox-close-btn {
   color: #2a2829;
@@ -399,7 +404,9 @@
   z-index: 2;
   display: flex;
   justify-content: flex-end;
-  padding: 1.5vw 1.5vw 0;
+  padding: 1.5vw 1.5vw;
 }
 
-
+.hidden {
+  display: none;
+}

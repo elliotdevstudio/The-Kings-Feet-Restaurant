@@ -1,10 +1,10 @@
 @use "../abstracts/mixins";
 @use "../abstracts/transforms";
 @use "../base/colors";
-@use "../base/font_styles";
-@use "../base/typography";
 @use "../components/buttons";
-
+@use "../layout/main-content-layout";
+@import "../base/font_styles";
+@import "../base/typography";
 
 .card-section-wrapper {
   height: min-content;

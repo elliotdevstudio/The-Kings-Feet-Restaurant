@@ -4,6 +4,22 @@
 @import url("https://use.typekit.net/grx8rwo.css");
 @import url("https://use.typekit.net/grx8rwo.css");
 @import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
+@import url("https://use.typekit.net/grx8rwo.css");
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
 body {
   padding: 0px;
   margin: 0px;
@@ -87,9 +103,83 @@ p {
 }
 
 .is-visible {
+  opacity: 1;
   transform: matrix(1, 0, 0, 1, 0, 0);
   transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1;
+}
+
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.menu-link {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+}
+
+h3 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+  margin: 0;
+}
+
+p {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(0vw + 1rem);
+}
+
+.product-text {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+@media (min-width: 472px) {
+  .product-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.menu-page-selector {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(1.44vw + 0.4rem);
+}
+
+.main-heading {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(0.036 * min(100vh, 900px) + 1rem);
+  padding: 17px;
+  margin: 2rem auto 0 auto;
+  text-align: center;
 }
 
 .product-card-wrapper.odd {
@@ -174,6 +264,7 @@ h3.product-card-heading {
   opacity: 0;
   transition-property: opacity;
   will-change: transform, opacity;
+  font-family: source-code-pro;
 }
 @media (min-width: 472px) {
   .product-card-description {
@@ -258,14 +349,309 @@ a.press-page-button:hover {
   color: white;
 }
 
-#navModal {
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.menu-link {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+}
+
+h3 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+  margin: 0;
+}
+
+p {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(0vw + 1rem);
+}
+
+.product-text {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+@media (min-width: 472px) {
+  .product-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.menu-page-selector {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(1.44vw + 0.4rem);
+}
+
+.main-heading {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(0.036 * min(100vh, 900px) + 1rem);
+  padding: 17px;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
+* {
+  box-sizing: border-box;
+}
+
+#main-site-container {
+  display: block;
+}
+
+#main-site-container.hide-overflow {
   display: none;
-  position: absolute;
-  flex-direction: row;
+}
+
+.block-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content {
+  box-sizing: content-box;
+  font-weight: 400;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  max-width: 1200px;
+  text-size-adjust: 100%;
+  overflow-wrap: break-word;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+/* was originally in home.scss */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer-content-spacing {
+  padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .footer-content-spacing {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+}
+.content-wrapper {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  position: relative;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    justify-content: space-between;
+  }
+}
+.icons-wrapper {
+  box-sizing: content-box;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.ig-icon-wrapper {
+  justify-self: flex-start;
+}
+
+.yelp-icon-wrapper {
+  justify-self: flex-end;
+}
+
+.full-width-page-wrapper {
+  margin-top: 15vh;
+  padding-top: 2rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+#nav-modal {
+  position: absolute;
+  margin-top: 15vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
   width: 100vw;
   height: 100%;
-  background-color: white;
+  display: none;
+  z-index: 10;
+}
+
+#nav-modal.show {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#modal-icons {
+  opacity: 0;
+}
+
+.modal-items {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, 0, 60);
+}
+
+.move-up {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: opacity 250ms cubic-bezier(0.25, 0, 0.25, 1), transform 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#modal-icons.reveal {
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.25, 0, 0.25, 1);
+}
+
+.modal-nav-item {
+  text-align: center;
+  font-family: source-code-pro, monospace;
+  font-size: calc(0vw + 2rem);
+  margin: 3vw 5vw;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0em;
+  transition-property: opacity;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.menu-link {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+}
+
+h3 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+  margin: 0;
+}
+
+p {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(0vw + 1rem);
+}
+
+.product-text {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+@media (min-width: 472px) {
+  .product-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.menu-page-selector {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(1.44vw + 0.4rem);
+}
+
+.main-heading {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(0.036 * min(100vh, 900px) + 1rem);
+  padding: 17px;
+  margin: 2rem auto 0 auto;
+  text-align: center;
 }
 
 footer {
@@ -292,6 +678,10 @@ footer {
   }
 }
 
+.hide {
+  display: none;
+}
+
 @media (min-width: 820px) {
   .footer-text {
     margin: 0;
@@ -302,6 +692,14 @@ footer {
 
 * {
   box-sizing: border-box;
+}
+
+#main-site-container {
+  display: block;
+}
+
+#main-site-container.hide-overflow {
+  display: none;
 }
 
 .block-content {
@@ -358,12 +756,21 @@ footer {
 }
 
 .icons-wrapper {
+  box-sizing: content-box;
+  width: fit-content;
   display: flex;
   flex-direction: row;
-  justify-self: center;
-  box-sizing: border-box;
-  width: 50px;
   gap: 15px;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.ig-icon-wrapper {
+  justify-self: flex-start;
+}
+
+.yelp-icon-wrapper {
+  justify-self: flex-end;
 }
 
 .full-width-page-wrapper {
@@ -373,6 +780,10 @@ footer {
   padding-right: 4vw;
 }
 
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
 body {
   padding: 0px;
   margin: 0px;
@@ -526,30 +937,7 @@ a.navlink {
   font-style: normal;
   color: hsl(330deg, 2.4390243902%, 16.0784313725%);
   text-decoration: none;
-}
-
-.nav-modal {
-  position: absolute;
-  background-color: white;
-  margin-top: 15vh;
-  width: 100vw;
-  height: 100vh;
-  display: none;
-  z-index: 10;
-}
-
-.modal-items-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.modal-nav-item {
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-icons-container {
-  justify-self: flex-end;
+  cursor: pointer;
 }
 
 .header-content-div {
@@ -626,7 +1014,6 @@ a.navlink {
   margin: none;
   width: 100%;
   transition: transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1), width 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
-  will-change: transform, width;
   height: 1px;
   background-color: rgb(0, 0, 0);
   will-change: transform, width;
@@ -647,11 +1034,15 @@ a.navlink {
 }
 
 .is-visible {
+  opacity: 1;
   transform: matrix(1, 0, 0, 1, 0, 0);
   transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1;
 }
 
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
 body {
   padding: 0px;
   margin: 0px;
@@ -726,6 +1117,96 @@ p {
   font-family: Blackriver;
   src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
 }
+* {
+  box-sizing: border-box;
+}
+
+#main-site-container {
+  display: block;
+}
+
+#main-site-container.hide-overflow {
+  display: none;
+}
+
+.block-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content {
+  box-sizing: content-box;
+  font-weight: 400;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  text-size-adjust: 100%;
+  overflow-wrap: break-word;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+/* was originally in home.scss */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer-content-spacing {
+  padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .footer-content-spacing {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+}
+.content-wrapper {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  position: relative;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    justify-content: space-between;
+  }
+}
+.icons-wrapper {
+  box-sizing: content-box;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.ig-icon-wrapper {
+  justify-self: flex-start;
+}
+
+.yelp-icon-wrapper {
+  justify-self: flex-end;
+}
+
+.full-width-page-wrapper {
+  margin-top: 15vh;
+  padding-top: 2rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
 .gallery-container {
   position: relative;
   margin-top: 15.5vh;
@@ -1212,6 +1693,7 @@ p {
 }
 
 .gallery-lightbox {
+  display: none;
   position: fixed;
   flex-direction: column;
   box-sizing: border-box;
@@ -1222,6 +1704,8 @@ p {
   left: 0;
   z-index: 9999;
   padding: calc(3vw + 20px) 3vw;
+  background-color: hsl(0deg, 0%, 100%);
+  opacity: 0.9;
 }
 
 .gallery-lightbox-close-btn {
@@ -1244,7 +1728,183 @@ p {
   z-index: 2;
   display: flex;
   justify-content: flex-end;
-  padding: 1.5vw 1.5vw 0;
+  padding: 1.5vw 1.5vw;
+}
+
+.hidden {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#main-site-container {
+  display: block;
+}
+
+#main-site-container.hide-overflow {
+  display: none;
+}
+
+.block-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content {
+  box-sizing: content-box;
+  font-weight: 400;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  text-size-adjust: 100%;
+  overflow-wrap: break-word;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+/* was originally in home.scss */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer-content-spacing {
+  padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .footer-content-spacing {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+}
+.content-wrapper {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  position: relative;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    justify-content: space-between;
+  }
+}
+.icons-wrapper {
+  box-sizing: content-box;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.ig-icon-wrapper {
+  justify-self: flex-start;
+}
+
+.yelp-icon-wrapper {
+  justify-self: flex-end;
+}
+
+.full-width-page-wrapper {
+  margin-top: 15vh;
+  padding-top: 2rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.menu-link {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+}
+
+h3 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+  margin: 0;
+}
+
+p {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(0vw + 1rem);
+}
+
+.product-text {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+@media (min-width: 472px) {
+  .product-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.menu-page-selector {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(1.44vw + 0.4rem);
+}
+
+.main-heading {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(0.036 * min(100vh, 900px) + 1rem);
+  padding: 17px;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
+.nav-homepage {
+  z-index: 10;
 }
 
 .homepage-menu {
@@ -1427,85 +2087,11 @@ h2.red-section-header-text {
 }
 
 .is-visible {
+  opacity: 1;
   transform: matrix(1, 0, 0, 1, 0, 0);
   transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1;
 }
 
-body {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-  font-size: 18px;
-}
-
-.menu-link {
-  font-family: Blackriver-bold;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
-  margin-top: 0px;
-  margin-bottom: 2rem;
-}
-
-h2 {
-  font-family: Abel, monospace;
-  font-weight: 300;
-  font-style: normal;
-  font-size: calc(1.44vw + 1.125rem);
-}
-
-h3 {
-  font-family: Abel, monospace;
-  font-weight: 300;
-  font-style: normal;
-  font-size: calc(1.44vw + 1.125rem);
-  margin: 0;
-}
-
-p {
-  font-family: source-code-pro, monospace;
-  font-weight: 200;
-  font-style: normal;
-  font-size: calc(0vw + 1rem);
-}
-
-.product-text {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-left: 8vw;
-  margin-right: 8vw;
-}
-
-@media (min-width: 472px) {
-  .product-text {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-.menu-page-selector {
-  font-family: source-code-pro, monospace;
-  font-weight: 200;
-  font-style: normal;
-  font-size: calc(1.44vw + 0.4rem);
-}
-
-.main-heading {
-  font-family: Blackriver-bold;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  font-size: calc(0.036 * min(100vh, 900px) + 1rem);
-  padding: 17px;
-  margin: 2rem auto 0 auto;
-  text-align: center;
-}
-
-@font-face {
-  font-family: Blackriver;
-  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
-}
 .button-container {
   display: flex;
   box-sizing: content-box;
@@ -1571,6 +2157,174 @@ a.press-page-button:hover {
   color: white;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+#main-site-container {
+  display: block;
+}
+
+#main-site-container.hide-overflow {
+  display: none;
+}
+
+.block-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content {
+  box-sizing: content-box;
+  font-weight: 400;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  text-size-adjust: 100%;
+  overflow-wrap: break-word;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+/* was originally in home.scss */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer-content-spacing {
+  padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .footer-content-spacing {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+}
+.content-wrapper {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  position: relative;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    justify-content: space-between;
+  }
+}
+.icons-wrapper {
+  box-sizing: content-box;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.ig-icon-wrapper {
+  justify-self: flex-start;
+}
+
+.yelp-icon-wrapper {
+  justify-self: flex-end;
+}
+
+.full-width-page-wrapper {
+  margin-top: 15vh;
+  padding-top: 2rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.menu-link {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(3 * 0.012 * min(100vh, 900px) + 1rem);
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+}
+
+h3 {
+  font-family: Abel, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1.44vw + 1.125rem);
+  margin: 0;
+}
+
+p {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(0vw + 1rem);
+}
+
+.product-text {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+@media (min-width: 472px) {
+  .product-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.menu-page-selector {
+  font-family: source-code-pro, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(1.44vw + 0.4rem);
+}
+
+.main-heading {
+  font-family: Blackriver-bold;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(0.036 * min(100vh, 900px) + 1rem);
+  padding: 17px;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
 .card-section-wrapper {
   height: min-content;
   padding-left: 6vw;
@@ -1704,6 +2458,10 @@ div.press-card:last-of-type {
   padding-top: 20px;
 }
 
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
 body {
   padding: 0px;
   margin: 0px;
@@ -1778,6 +2536,96 @@ p {
   font-family: Blackriver;
   src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
 }
+* {
+  box-sizing: border-box;
+}
+
+#main-site-container {
+  display: block;
+}
+
+#main-site-container.hide-overflow {
+  display: none;
+}
+
+.block-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content {
+  box-sizing: content-box;
+  font-weight: 400;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  text-size-adjust: 100%;
+  overflow-wrap: break-word;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+/* was originally in home.scss */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer-content-spacing {
+  padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .footer-content-spacing {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+}
+.content-wrapper {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  position: relative;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    justify-content: space-between;
+  }
+}
+.icons-wrapper {
+  box-sizing: content-box;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.ig-icon-wrapper {
+  justify-self: flex-start;
+}
+
+.yelp-icon-wrapper {
+  justify-self: flex-end;
+}
+
+.full-width-page-wrapper {
+  margin-top: 15vh;
+  padding-top: 2rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
 .main-menu-section {
   position: relative;
   background-color: rgb(182, 32, 37);
@@ -1857,6 +2705,96 @@ p {
 
 /* min 768 
  menu item  */
+* {
+  box-sizing: border-box;
+}
+
+#main-site-container {
+  display: block;
+}
+
+#main-site-container.hide-overflow {
+  display: none;
+}
+
+.block-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content {
+  box-sizing: content-box;
+  font-weight: 400;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  text-size-adjust: 100%;
+  overflow-wrap: break-word;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+/* was originally in home.scss */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer-content-spacing {
+  padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .footer-content-spacing {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+}
+.content-wrapper {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  position: relative;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    justify-content: space-between;
+  }
+}
+.icons-wrapper {
+  box-sizing: content-box;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.ig-icon-wrapper {
+  justify-self: flex-start;
+}
+
+.yelp-icon-wrapper {
+  justify-self: flex-end;
+}
+
+.full-width-page-wrapper {
+  margin-top: 15vh;
+  padding-top: 2rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
 .patio-image-container {
   box-sizing: content-box;
   width: auto;
@@ -1912,11 +2850,15 @@ p {
 }
 
 .is-visible {
+  opacity: 1;
   transform: matrix(1, 0, 0, 1, 0, 0);
   transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1;
 }
 
+@font-face {
+  font-family: Blackriver;
+  src: url(".assets/Exported Fonts/Blackriver-Bold.otf");
+}
 body {
   padding: 0px;
   margin: 0px;
@@ -2054,6 +2996,96 @@ a.red-section-button:hover {
 a.press-page-button:hover {
   background-color: rgb(182, 32, 37);
   color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#main-site-container {
+  display: block;
+}
+
+#main-site-container.hide-overflow {
+  display: none;
+}
+
+.block-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content {
+  box-sizing: content-box;
+  font-weight: 400;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  text-size-adjust: 100%;
+  overflow-wrap: break-word;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+/* was originally in home.scss */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer-content-spacing {
+  padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .footer-content-spacing {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+}
+.content-wrapper {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  position: relative;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    justify-content: space-between;
+  }
+}
+.icons-wrapper {
+  box-sizing: content-box;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.ig-icon-wrapper {
+  justify-self: flex-start;
+}
+
+.yelp-icon-wrapper {
+  justify-self: flex-end;
+}
+
+.full-width-page-wrapper {
+  margin-top: 15vh;
+  padding-top: 2rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
 .online-ordering-main-page {

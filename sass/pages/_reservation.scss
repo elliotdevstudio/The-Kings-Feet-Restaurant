@@ -1,5 +1,5 @@
-@import '../abstracts/mixins';
-
+@use '../abstracts/mixins';
+@use "../layout/main-content-layout";
 
 .patio-image-container {
     box-sizing: content-box;

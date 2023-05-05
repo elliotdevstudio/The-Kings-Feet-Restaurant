@@ -1,4 +1,5 @@
 @use "../abstracts/mixins";
+@use "../base/font_styles";
 
 footer {
   min-height: 33vh; 
@@ -19,6 +20,9 @@ footer {
     gap: 0;
     max-width: 1200px;
   }
+}
+.hide {
+  display: none;
 }
 .footer-text {
   @include breakpoint('med-lg'){
