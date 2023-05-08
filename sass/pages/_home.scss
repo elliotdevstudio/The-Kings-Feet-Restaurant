@@ -155,11 +155,4 @@ h2.red-section-header-text {
   }
 
 }
-.icons-wrapper {
-  width: min-content;
-  margin-top: 20px;
 
-  @include breakpoint('medium'){
-    margin-top: 0px;
-  }
-}

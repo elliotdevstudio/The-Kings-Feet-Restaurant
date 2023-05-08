@@ -48,6 +48,9 @@
   opacity: 1;
   transition: opacity 250ms cubic-bezier(.25,0,.25,1);
 }
+#modal-icons.add-margin {
+  margin-bottom: 2em;
+}
 .modal-nav-item {
   text-align: center;
   font-family: source-code-pro, monospace;
